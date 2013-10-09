@@ -1,0 +1,16 @@
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner"><div class="container">
+				<ul class="nav">
+					<li ng-class="{ active: $state.includes('home') }"><a href="#/">Home</a></li>
+                    <li ng-class="{ active: $state.includes('settings') }"><a href="#/settings">Settings</a></li>
+                    <li ng-class="{ active: $state.includes('dataset') }"><a href="#/dataset">Data Set</a></li>
+				</ul>
+				<p class="navbar-text" ui-view="hint"></p>
+			</div></div>
+		</div>
+		<div class="container" style="margin-top:60px" ui-view ></div>
+		<hr>
+		<pre>
+			$state = {{$state.current.name}}
+			$stateParams = {{$stateParams}}
+		</pre>

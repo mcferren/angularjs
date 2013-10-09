@@ -1,0 +1,24 @@
+<ul class="sortLinks">
+    <li><a ng-click="predicate = 'filename'; reverse=!reverse">Filename c</a></li>
+    <li><a ng-click="predicate = 'size'; reverse=!reverse">Size</a></li>
+    <li><a ng-click="predicate = 'type'; reverse=!reverse">Type</a></li>
+    <li><a ng-click="predicate = 'status'; reverse=!reverse">Status</a></li>
+</ul>
+<div class="projectBody" nice-scrollbar infinite-scroll='loadingMore()' infinite-scroll-distance='10'>
+	<table class="table">  
+    <tbody>  
+      <tr ng-repeat="row in body | orderBy:predicate:reverse">
+        <td>{{row.filename}}</td>
+        <td>{{row.size}}</td>
+        <td>{{row.type}}</td>  
+        <td>{{row.status}}</td>  
+      </tr>  
+      <tr ng-repeat="jive in bunk">
+        <td>{{jive}}</td>
+        <td></td>
+        <td></td>  
+        <td></td>  
+      </tr> 
+    </tbody>  
+  </table> 
+</div>

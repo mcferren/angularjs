@@ -1,0 +1,100 @@
+<h3  green-man>Activity Monitor</h3>
+
+<div class="sidebarControls" nice-scrollbar>
+	<ul class="sidebarContentSelections" infinite-scroll='loadMore()' infinite-scroll-distance='10'>
+		
+
+		<li ng-repeat="singleActivityEvent in activityLogList"
+		    ng-mouseenter="projectToolsShow = true" 
+		    ng-mouseleave="projectToolsShow = false">
+
+		    <div class="leftTool">
+
+
+				<!--
+					icon-plus-sign				createButton
+					icon-ok-sign				completeButton
+					icon-exclamation-sign		issueButton
+					icon-circle-arrow-up		injestButton
+					icon-search					searchButton
+
+
+
+					<button type="button" class="btn btn-danger sidebarButton issueButton">
+						<i class="icon-white icon-exclamation-sign"></i>
+					</button>
+				-->
+
+				
+
+	    		<button type="button" 
+	    				ng-switch on="singleActivityEvent.category"
+	    				class="btn btn-success sidebarButton"
+	    				ng-class="{'createButton': 'singleActivityEvent.category == create', 
+	    						   'searchButton': 'singleActivityEvent.category == search', 
+	    						   'injestButton': 'singleActivityEvent.category == injest', 
+	    						   'issueButton': 'singleActivityEvent.category == issue', 
+	    						   'completeButton': 'singleActivityEvent.category == complete'}">
+	    			<i ng-switch-when="create" class="icon-white icon-plus-sign"></i>
+	    			<i ng-switch-when="search" class="icon-white icon-search"></i>
+	    			<i ng-switch-when="injest" class="icon-white icon-circle-arrow-up"></i>
+	    			<i ng-switch-when="issue" class="icon-white icon-exclamation-sign"></i>
+	    			<i ng-switch-when="complete" class="icon-white icon-ok-sign"></i>
+				</button>
+
+				
+			</div>
+
+			<span>
+				<a href="">
+					{{singleActivityEvent.category}}
+				</a>
+			</span>
+			
+			<div class="rightTool">
+				<i class="icon-remove"
+				   ng-show="projectToolsShow"></i>
+			</div>
+
+		</li>
+
+		<li ng-repeat="image in images"
+		    ng-mouseenter="projectToolsShow = true" 
+		    ng-mouseleave="projectToolsShow = false">
+
+		    <div>
+				<i class="icon-star"
+				   ng-show="projectToolsShow"></i>
+			</div>
+
+			<span>
+				<a href="">
+					{{image}}
+				</a>
+			</span>
+			
+			<div>
+				<i class="icon-remove"
+				   ng-show="projectToolsShow"></i>
+			</div>
+
+		</li>
+
+		<li ng-show='reddit.busy'>Loading data...</li>
+
+	</ul>
+</div>
+
+<form class="input-append sidebarAutoCompleteRow">
+	<input id="sidebarAutoComplete" type="text" placeholder="Search for Log Events...">
+	<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+	  ...
+	</ul>
+	<button type="submit" 
+			class="btn btn-mini autoCompletePlaciboButton">
+		<i class="icon-search"></i>
+	</button>
+</form>
