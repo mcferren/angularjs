@@ -20,10 +20,11 @@ app.controller('templateCtrl', ['$scope',
 
     $scope.footerItems = [
       'InfoBelt Website',
-      'Contact',
-      'Help'
+      'Contact'
     ];
 
     $scope.sidebarState = true;
+
+    $scope.helpState = false;
 
   }]);

@@ -5,66 +5,96 @@
 		
 
 		<li ng-repeat="singleActivityEvent in activityLogList"
-		    ng-mouseenter="projectToolsShow = true" 
-		    ng-mouseleave="projectToolsShow = false">
+		    ng-mouseenter="activityToolsShow = true" 
+		    ng-mouseleave="activityToolsShow = false">
 
-		    <div class="leftTool">
-
-
-				<!--
-					icon-plus-sign				createButton
-					icon-ok-sign				completeButton
-					icon-exclamation-sign		issueButton
-					icon-circle-arrow-up		injestButton
-					icon-search					searchButton
-
-
-
-					<button type="button" class="btn btn-danger sidebarButton issueButton">
-						<i class="icon-white icon-exclamation-sign"></i>
-					</button>
-				-->
-
-				
-
-	    		<button type="button" 
-	    				ng-switch on="singleActivityEvent.category"
-	    				class="btn btn-success sidebarButton"
-	    				ng-class="{'createButton': 'singleActivityEvent.category == create', 
-	    						   'searchButton': 'singleActivityEvent.category == search', 
-	    						   'injestButton': 'singleActivityEvent.category == injest', 
-	    						   'issueButton': 'singleActivityEvent.category == issue', 
-	    						   'completeButton': 'singleActivityEvent.category == complete'}">
-	    			<i ng-switch-when="create" class="icon-white icon-plus-sign"></i>
-	    			<i ng-switch-when="search" class="icon-white icon-search"></i>
-	    			<i ng-switch-when="injest" class="icon-white icon-circle-arrow-up"></i>
-	    			<i ng-switch-when="issue" class="icon-white icon-exclamation-sign"></i>
-	    			<i ng-switch-when="complete" class="icon-white icon-ok-sign"></i>
+		    <div class="leftTool" ng-switch on="singleActivityEvent.category">
+		    	
+				<button type="button" 
+				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+						class="btn btn-success sidebarButton createButton"
+						ng-switch-when="create">
+							<i class="icon-white icon-plus-sign"></i>
 				</button>
-
-				
+				<button type="button" 
+				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+						class="btn btn-success sidebarButton completeButton"
+						ng-switch-when="complete">
+							<i class="icon-white icon-ok-sign"></i>
+				</button>
+				<button type="button" 
+				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+						class="btn btn-success sidebarButton injestButton"
+						ng-switch-when="injest">
+							<i class="icon-white icon-circle-arrow-up"></i>
+				</button>
+				<button type="button" 
+				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+						class="btn btn-success sidebarButton searchButton"
+						ng-switch-when="search">
+							<i class="icon-white icon-search"></i>
+				</button>
+				<button type="button" 
+				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+						class="btn btn-danger sidebarButton issueButton"
+						ng-switch-when="issue">
+							<i class="icon-white icon-exclamation-sign"></i>
+				</button>
+			
 			</div>
 
-			<span>
-				<a href="">
-					{{singleActivityEvent.category}}
+			<span class="openedActivityEvent" ng-if="singleActivityEvent.isOpened==true">
+				<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
+					{{singleActivityEvent.body}}
+				</a>
+				<ul>
+					<li>
+						<label>Who:</label>
+						<h6>{{singleActivityEvent.user}}<h6>
+					</li>
+					<li>
+						<label>What:</label>
+							<h6>
+								<a href="" 
+								   smooth-scroll 
+								   target="p{{singleActivityEvent.serialNumber}}" 
+								   offset="116">
+								   		{{singleActivityEvent.projectName}}
+								</a>
+							</h6>						
+					</li>
+					<li>
+						<label>When:</label>
+						{{singleActivityEvent.timestamp | date:'MMM dd yyyy hh:mm a'}}
+					</li>
+				</ul>
+			</span>
+
+			<span class="closedActivityEvent" ng-if="singleActivityEvent.isOpened==false">
+				<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
+					{{singleActivityEvent.title}}
 				</a>
 			</span>
 			
 			<div class="rightTool">
 				<i class="icon-remove"
-				   ng-show="projectToolsShow"></i>
+				   ng-show="activityToolsShow"></i>
 			</div>
 
 		</li>
 
+
+
+
+
+		<!--
 		<li ng-repeat="image in images"
-		    ng-mouseenter="projectToolsShow = true" 
-		    ng-mouseleave="projectToolsShow = false">
+		    ng-mouseenter="activityToolsShow = true" 
+		    ng-mouseleave="activityToolsShow = false">
 
 		    <div>
 				<i class="icon-star"
-				   ng-show="projectToolsShow"></i>
+				   ng-show="activityToolsShow"></i>
 			</div>
 
 			<span>
@@ -75,13 +105,13 @@
 			
 			<div>
 				<i class="icon-remove"
-				   ng-show="projectToolsShow"></i>
+				   ng-show="activityToolsShow"></i>
 			</div>
 
 		</li>
 
 		<li ng-show='reddit.busy'>Loading data...</li>
-
+		-->
 	</ul>
 </div>
 
