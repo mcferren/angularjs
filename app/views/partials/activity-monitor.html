@@ -1,15 +1,17 @@
 <h3  green-man>Activity Monitor</h3>
 
 <div class="sidebarControls" nice-scrollbar>
-	<ul class="sidebarContentSelections" infinite-scroll='loadMore()' infinite-scroll-distance='10'>
-		
-
+	<ul class="sidebarContentSelections">
+	<!--<ul class="sidebarContentSelections"> --><!--infinite-scroll='loadMore()' infinite-scroll-distance='10'-->
 		<li ng-repeat="singleActivityEvent in activityLogList"
+       		ng-switch on="singleActivityEvent.category"
+       		ng-class="{'openedActivityEvent':singleActivityEvent.isOpened, 
+       				   '':!singleActivityEvent.isOpened}"
 		    ng-mouseenter="activityToolsShow = true" 
-		    ng-mouseleave="activityToolsShow = false">
+		    ng-mouseleave="activityToolsShow = false"
+		    ng-cloak>
 
-		    <div class="leftTool" ng-switch on="singleActivityEvent.category">
-		    	
+		    <div class="leftTool">
 				<button type="button" 
 				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
 						class="btn btn-success sidebarButton createButton"
@@ -40,79 +42,69 @@
 						ng-switch-when="issue">
 							<i class="icon-white icon-exclamation-sign"></i>
 				</button>
-			
-			</div>
-
-			<span class="openedActivityEvent" ng-if="singleActivityEvent.isOpened==true">
-				<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
-					{{singleActivityEvent.body}}
-				</a>
-				<ul>
-					<li>
-						<label>Who:</label>
-						<h6>{{singleActivityEvent.user}}<h6>
-					</li>
-					<li>
-						<label>What:</label>
-							<h6>
-								<a href="" 
-								   smooth-scroll 
-								   target="p{{singleActivityEvent.serialNumber}}" 
-								   offset="116">
-								   		{{singleActivityEvent.projectName}}
-								</a>
-							</h6>						
-					</li>
-					<li>
-						<label>When:</label>
-						{{singleActivityEvent.timestamp | date:'MMM dd yyyy hh:mm a'}}
-					</li>
-				</ul>
-			</span>
-
-			<span class="closedActivityEvent" ng-if="singleActivityEvent.isOpened==false">
-				<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
-					{{singleActivityEvent.title}}
-				</a>
-			</span>
-			
-			<div class="rightTool">
-				<i class="icon-remove"
-				   ng-show="activityToolsShow"></i>
-			</div>
-
-		</li>
-
-
-
-
-
-		<!--
-		<li ng-repeat="image in images"
-		    ng-mouseenter="activityToolsShow = true" 
-		    ng-mouseleave="activityToolsShow = false">
-
-		    <div>
-				<i class="icon-star"
-				   ng-show="activityToolsShow"></i>
 			</div>
 
 			<span>
-				<a href="">
-					{{image}}
+	       		<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
+						{{singleActivityEvent.title}}
 				</a>
 			</span>
-			
-			<div>
-				<i class="icon-remove"
-				   ng-show="activityToolsShow"></i>
+
+			<div class="rightTool">
+				<i class="icon-remove" ng-show="activityToolsShow"></i>
 			</div>
 
-		</li>
-
-		<li ng-show='reddit.busy'>Loading data...</li>
-		-->
-	</ul>
+			<ul ng-if="singleActivityEvent.isOpened==true">
+				<li>
+					<em>Who:</em>
+					<div>
+						{{singleActivityEvent.user}}
+					</div>
+				</li>
+	       		<li>
+					<em>What:</em>
+					<div>
+						<!--<a href="" 
+						   smooth-scroll 
+						   target="p{{singleActivityEvent.serialNumber}}" 
+						   offset="116">
+						   		{{singleActivityEvent.projectName}}
+						</a>-->
+						<a href="" 
+						   project-link
+						   projectid="{{singleActivityEvent.serialNumber}}"
+						   offset="116">
+						   		{{singleActivityEvent.projectName}}
+						</a>
+					</div>
+	       		</li>
+	       		<li>
+					<em>When:</em>
+					<div>
+						{{singleActivityEvent.timestamp | date:'MMM dd yyyy hh:mm a'}}
+					</div>
+	       		</li>
+	       		<li>
+					<em>Where from:</em>
+					<div>
+						{{singleActivityEvent.source}}
+					</div>
+	       		</li>
+	       		<li>
+					<em>Where to:</em>
+					<div>
+						{{singleActivityEvent.destination}}
+					</div>
+	       		</li>
+	       		<li>
+					<em>How many:</em>
+					<div>
+						{{singleActivityEvent.quantity}}
+					</div>
+	       		</li>
+			</ul>
+       	</li>
+    </ul>
 </div>
 
 <form class="input-append sidebarAutoCompleteRow">

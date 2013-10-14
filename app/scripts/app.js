@@ -50,6 +50,24 @@ app.config(function($stateProvider, $urlRouterProvider){
       }
     }
   })
+      .state('newbrowser', {
+    parent: 'template',
+    url: '/newbrowser',
+    views: {
+      "content": {
+        templateUrl: '/views/partials/newbrowser-projects.html',
+        controller: 'projectsCtrl'
+      },
+      "menu": {
+        templateUrl: '/views/partials/newbrowser-projects-menu.html',
+        controller: 'projectsCtrl'
+      },
+      "sidebar": {
+        templateUrl: '/views/partials/activity-monitor.html',
+        controller: 'activityMonitorCtrl'
+      }
+    }
+  })
       .state('explore', {
     parent: 'template',
     url: '/explore',
@@ -76,10 +94,6 @@ app.config(function($stateProvider, $urlRouterProvider){
       "content": {
         templateUrl: '/views/partials/create.html',
         controller: 'playCtrl'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
       }
     }
   })
@@ -91,10 +105,6 @@ app.config(function($stateProvider, $urlRouterProvider){
       "content": {
         templateUrl: '/views/partials/governance.html',
         controller: 'playCtrl'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
       }
     }
   })
@@ -105,10 +115,6 @@ app.config(function($stateProvider, $urlRouterProvider){
       "content": {
         templateUrl: '/views/partials/configuration.html',
         controller: 'playCtrl'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
       }
     }
   });

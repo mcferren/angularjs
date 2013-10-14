@@ -1,0 +1,23 @@
+<div id="g1">
+	<div class="graphHeader" ng-switch on="gid">
+		<h4 ng-switch-when="0">Line of Business Graph</h4>
+		<h4 ng-switch-when="1">Projects by Region Graph</h4>
+		<h4 ng-switch-when="2">Storage Saves Graph</h4>
+		<h4 ng-switch-when="3">System Status Graph</h4>
+		<form class="form-search pull-right">
+			<div class="input-append">
+				<input id="contentSearchInput" 
+					   type="text" 
+					   class="search-query"
+					   placeholder="Search for Artifacts...">
+				<button type="submit" class="btn btn-mini"><i class="icon-search"></i></button>
+			</div>
+		</form>
+	</div>
+	<div class="graphBody" ng-switch on="gid">
+		<img ng-switch-when="0" src="/images/g0.png">
+		<img ng-switch-when="1" src="/images/g1.png">
+		<img ng-switch-when="2" src="/images/g2.png">
+		<img ng-switch-when="3" src="/images/g3.png">
+	</div>
+</div>

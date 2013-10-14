@@ -1,33 +1,68 @@
-<h3 green-man>Projects</h3>
+<h3 green-man>New Browser</h3>
 
 <div class="contentMenuControls" 
      ng-class="{'cmcTall':helpState, 'cmcShort':!helpState}"
 	 nice-scrollbar>
-	<ul class="contentMenuSelections" 
-		ng-controller="graphsCtrl"> <!-- infinite-scroll='loadMore()' infinite-scroll-distance='10' -->
+	<ul class="contentMenuSelections"> <!-- infinite-scroll='loadMore()' infinite-scroll-distance='10' -->
 		<!--
 		<li ng-repeat="alphaProject in reddit.items">
 			<a href="" smooth-scroll target="p1" offset="175">{{alphaProject.author}}</a>
 		</li>
 		-->
 
-		<li ng-repeat="singleGraph in graphList"
-			ng-mouseenter="gshow = true" 
-			ng-mouseleave="gshow = false">
+		<li ng-mouseenter="g1show = true" ng-mouseleave="g1show = false">
 		    <div class="leftTool">
 				<i class="icon-lock"
-				   ng-show="gshow"></i>
+				   ng-show="g1show"></i>
 			</div>
-			<span> <!-- target="g1" smooth-scroll  -->
-				<a href="" 
-				   graph-link
-				   graphid="{{singleGraph.graphID}}"
-				   offset="65">{{singleGraph.name}}
-				</a>
+			<span>
+				<a href="" smooth-scroll target="g1" offset="65">Line of Business Graph</a>
 			</span>
 			<div class="rightTool">
 				<i class="icon-star"
-				   ng-show="gshow"></i>
+				   ng-show="g1show"></i>
+			</div>
+		</li>
+
+		<li ng-mouseenter="g2show = true" ng-mouseleave="g2show = false">
+			<div class="leftTool">
+				<i class="icon-lock"
+				   ng-show="g2show"></i>
+			</div>
+			<span>
+				<a href="" smooth-scroll target="g2" offset="65">Projects by Region Graph</a>
+			</span>
+			<div class="rightTool">
+				<i class="icon-star"
+				   ng-show="g2show"></i>
+			</div>
+		</li>
+
+		<li ng-mouseenter="g3show = true" ng-mouseleave="g3show = false">
+		    <div class="leftTool">
+				<i class="icon-lock"
+				   ng-show="g3show"></i>
+			</div>
+			<span>
+				<a href="" smooth-scroll target="g3" offset="65">Storage Saves Graph</a>
+			</span>
+			<div class="rightTool">
+				<i class="icon-star"
+				   ng-show="g3show"></i>
+			</div>
+		</li>
+
+		<li ng-mouseenter="g4show = true" ng-mouseleave="g4show = false">
+		    <div class="leftTool">
+				<i class="icon-lock"
+				   ng-show="g4show"></i>
+			</div>
+			<span>
+				<a href="" smooth-scroll target="g4" offset="65">System Status Graph</a>
+			</span>
+			<div class="rightTool">
+				<i class="icon-star"
+				   ng-show="g4show"></i>
 			</div>
 		</li>
 
@@ -39,10 +74,10 @@
 				<i class="icon-remove"
 				   ng-show="projectToolsShow"></i>
 			</div>
-		    <span><!--target="p{{singleProject.serialNumber}}"  smooth-scroll -->
+		    <span>
 				<a href="" 
-				   project-link
-				   projectid="{{singleProject.serialNumber}}"
+				   smooth-scroll 
+				   target="p{{singleProject.serialNumber}}" 
 				   offset="116">
 				   		{{singleProject.name}}
 				</a>

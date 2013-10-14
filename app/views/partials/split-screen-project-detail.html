@@ -1,6 +1,5 @@
 <div class="projectBlock" ng-if="collapseIsClosed==false"> 
-	<div class="projectHeader"
-       	 ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+	<div class="projectHeader">
 		<i ng-click="changeCollapseState()" class="icon-minus-sign"></i>
 		<h4 ng-transclude ng-click="changeCollapseState()"></h4>
 		<ul class="nav nav-tabs pull-right"
@@ -41,30 +40,29 @@
 	</div>
 
 	<div ng-switch on="selection">
-		<div ng-switch-when="discovered">
+		<div ng-switch-when="discoveredd">
 			<div discovered-tab></div>
 		</div>
-		<div ng-switch-when="archived">
+		<div ng-switch-when="archivedd">
 			<div archived-tab></div>
 		</div>
-		<div ng-switch-when="expired">
+		<div ng-switch-when="expiredd">
 			<div expired-tab></div>
 		</div>
-		<div ng-switch-when="destroyed">
+		<div ng-switch-when="destroyedd">
 			<div destroyed-tab></div>
 		</div>
-		<div ng-switch-when="edit">
+		<div ng-switch-when="editt">
 			<div edit-tab></div>
 		</div>
-		<div ng-switch-when="configuration">
+		<div ng-switch-when="configurationn">
 			<div configuration-tab></div>
 		</div>
 	</div>
 </div>
 
 <div class="projectBlock" ng-if="collapseIsClosed==true">
-	<div class="projectHeader"
-       	 ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+	<div class="projectHeader">
 		<i ng-click="changeCollapseState()" class="icon-plus-sign"></i>
 		<h4 ng-transclude ng-click="changeCollapseState()"></h4>
 	</div>

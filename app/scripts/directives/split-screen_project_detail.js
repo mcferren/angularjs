@@ -2,7 +2,7 @@
 
 var app = angular.module('auxFeatures');
 
-app.directive('projectDetail', function () {
+app.directive('splitscreenProjectdetail', function () {
     return {
       restrict: 'A',
       replace: false,
@@ -19,14 +19,14 @@ app.directive('projectDetail', function () {
           $scope.selection = $scope.tablist[4];
           */
           
-          $scope.tabs = ['discovered', 'archived', 'expired', 'destroyed', 'edit','configuration'];
+          $scope.tabs = ['discoveredd', 'archivedd', 'expiredd', 'destroyedd', 'editt','configurationn'];
           $scope.selection = $scope.tabs[5];
-          $scope.collapseIsClosed = false;
+          $scope.collapseIsClosed = true;
           $scope.changeCollapseState = function() {
               $scope.collapseIsClosed = !$scope.collapseIsClosed;
           }
 
       },
-      templateUrl: '/views/partials/project-detail.html'
+      templateUrl: '/views/partials/split-screen-project-detail.html'
     };
 });

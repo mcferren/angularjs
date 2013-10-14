@@ -10,10 +10,10 @@ app.directive('niceScrollbar', function($parse) {
 		replace: false,
 		link: function($scope, $elem, $attr) {
 
-
+				/*
 				$elem.mouseenter(function() {
 				    $elem.css("cursor","row-resize");
-				});
+				});*/
 
 
 			    $elem.niceScroll({cursorborder:"#ddd",
@@ -26,9 +26,9 @@ app.directive('niceScrollbar', function($parse) {
 			    				  cursorwidth:"10",
 			    				  cursorborderradius:"0px",
 			    				  //scrollspeed:100,
-			    				  touchbehavior:true,
+			    				  touchbehavior:false,
 			    				  bouncescroll:true,
-			    				  cursordragontouch:true
+			    				  cursordragontouch:false
 			    });
 		}
 	}

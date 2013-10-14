@@ -1,9 +1,10 @@
 <nav class="navbar lockednav">
   <div class="deco"> <!-- need this extra nest div so we can use padding to hide scrolling content-->
-    <div class="navbar-inner ">
+    <div class="navbar-inner"
+         ng-cloak>
 
       <ul class="nav ">
-        <li><a href="#/home/projects"><img src="/images/chronos_head.png"></a></li>
+        <li><a href="#/home/projects"><img src="/images/infobelt_head.png"></a></li>
         <li ng-repeat="link in menuItems"><a ng-href="#/home/{{link}}">{{link | camelCase}}</a></li>
       </ul>
 
@@ -52,7 +53,7 @@
   <footer class="navbar"
           ng-class="{'skinny':sidebarState, 'fat':!sidebarState} " >
         <ul class="nav">
-          <li ng-repeat="link in footerItems"><a ng-href="#/home/{{link}}">{{link}}</a></li>
+          <li ng-repeat="link in footerItems" ng-cloak><a ng-href="#/home/{{link}}">{{link}}</a></li>
           <li class="labeled">
             <label for="helpClick" >Help:</label>
             <input id="helpClick" type="checkbox" ng-model="helpState">
@@ -66,25 +67,6 @@
           </li>
         </ul>
   </footer> 
-
-
-<!--
-  <footer class="navbar skinny"
-          ng-class="{'skinny':sidebarState, 'fat':!sidebarState}" >
-      <div class="navbar-inner">
-        <ul class="nav">
-          <li ng-repeat="link in footerItems"><a ng-href="#/home/{{link}}">{{link}}</a></li>
-        </ul>
-
-        <ul class="nav pull-right">
-          <li>
-            <label for="sideClick" >Activity Monitor:</label>
-            <input id="sideClick" type="checkbox" ng-model="sidebarState">
-          </li>
-        </ul>
-      </div>
-  </footer> 
--->
 
   <div class="sidebar well" 
        ng-show="sidebarState">

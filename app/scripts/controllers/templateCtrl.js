@@ -7,6 +7,7 @@ app.controller('templateCtrl', ['$scope',
 
     $scope.menuItems = [
       'projects',
+      //'newbrowser',
       'explore',
       'governance',
       'create',

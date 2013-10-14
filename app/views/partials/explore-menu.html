@@ -1,17 +1,25 @@
 <h3 green-man>Explore</h3>
 
-<div class="contentMenuControls cmcTall" nice-scrollbar>
-	<ul class="contentMenuSelections" infinite-scroll='loadMore()' infinite-scroll-distance='10'>
+<div class="contentMenuControls" 
+     ng-class="{'cmcTall':helpState, 'cmcShort':!helpState}"
+	 nice-scrollbar>
+	<ul class="contentMenuSelections"> <!-- infinite-scroll='loadMore()' infinite-scroll-distance='10' -->
+		<!--
+		<li ng-repeat="alphaProject in reddit.items">
+			<a href="" smooth-scroll target="p1" offset="175">{{alphaProject.author}}</a>
+		</li>
+		-->
 
 	</ul>
 </div>
 
 <form class="input-append projectAutoCompleteRow">
-	<input id="projectAutoComplete" type="text" placeholder="Search for Artifacts...">
+	<input id="projectAutoComplete" type="text" placeholder="Search for Projects...">
 	<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
 		<span class="caret"></span>
 	</button>
-	<ul class="dropdown-menu">
+	<ul class="dropdown-menu"
+      	ng-class="{'menuShort':helpState, 'menuTall':!helpState}">
 	  ...
 	</ul>
 	<button type="submit" 
@@ -20,12 +28,14 @@
 	</button>
 </form>
 
-<form class="input-append bottomInputRow birTall dropup">
-	<input id="createProjectNaming" type="text" placeholder="Create a New Artifact...">
+<form class="input-append bottomInputRow dropup"
+      ng-class="{'birTall':helpState, 'birShort':!helpState}">
+	<input id="createProjectNaming" type="text" placeholder="Create a New Project...">
 	<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
 		<span class="caret"></span>
 	</button>
-	<ul class="dropdown-menu">
+	<ul class="dropdown-menu"
+      	ng-class="{'menuShort':helpState, 'menuTall':!helpState}">
 	  ...
 	</ul>
 	<button type="submit" 
