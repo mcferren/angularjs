@@ -1,5 +1,46 @@
 <ul class="sortLinks"
     ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
 </ul>
-<div class="projectBody" nice-scrollbar infinite-scroll='loadingMore()' infinite-scroll-distance='10'>
+
+<div class="projectWrapper"
+     ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+</div>
+
+<div class="staticProjectCanvasAux" 
+     ng-class="{'skinny':sidebarState, 
+                'fat':!sidebarState, 
+                'spcShortAux':helpState, 
+                'spcTallAux':!helpState}"> 
+		<div class="bottomBlank">
+		</div>
+		<div class="bottomFence">
+			<div class="leftBlinder"></div>
+			<div class="rightBlinder"></div>
+		</div>
+</div>
+
+<div class="projectBody editEnclosure"> 
+	<!--nice-scrollbar infinite-scroll='loadingMore()' infinite-scroll-distance='10'-->
+	<form ng-submit="submit()">
+		<input id="projectTitle" 
+			   type="text" 
+			   data-msd-placeholder="Title" 
+			   data-ng-model="text">
+
+		<!-- MATT SAYS HOLD OFF ON META DATA FIELD FOR NOW
+		<input id="projectMeta" 
+			   type="text" 
+			   data-msd-placeholder="Meta Data" 
+			   data-ng-model="text">
+		-->
+
+		<textarea id="projectDescription" 
+				  type="text" 
+				  data-msd-placeholder="Desc" 
+				  data-ng-model="text"></textarea>
+		<span>
+			<button class="btn btn-success" type="button">Submit Project</button>
+		</span>
+
+	</form>
 </div>

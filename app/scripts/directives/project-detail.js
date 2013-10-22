@@ -19,7 +19,14 @@ app.directive('projectDetail', function () {
           $scope.selection = $scope.tablist[4];
           */
           
-          $scope.tabs = ['discovered', 'archived', 'expired', 'destroyed', 'edit','configuration'];
+          $scope.tabs = ['edit', 
+                         'channels', 
+                         'schedules', 
+                         'sources', 
+                         'destinations', 
+                         'files', 
+                         'stats'];
+
           $scope.selection = $scope.tabs[5];
           $scope.collapseIsClosed = false;
           $scope.changeCollapseState = function() {

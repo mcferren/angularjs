@@ -4,13 +4,13 @@ var app = angular.module('myapp', ['ui.state',
                                    'ngResource', 
                                    'auxFeatures',
                                    'infinite-scroll',
-                                   'angularSmoothscroll']);
+                                   'monospaced.placeholder']);
 
 angular.module('auxFeatures', []);
 
 app.config(function($stateProvider, $urlRouterProvider){
   
-  $urlRouterProvider.otherwise('/home/projects');
+  $urlRouterProvider.otherwise('/home/dashboard');
  
   $stateProvider
       .state('template', {
@@ -26,40 +26,26 @@ app.config(function($stateProvider, $urlRouterProvider){
       "content": {
         templateUrl: '/views/partials/dashboard.html'
       },
+      "menu": {
+        templateUrl: '/views/partials/graphs-menu.html',
+        controller: 'projectsCtrl'
+      },
       "sidebar": {
         templateUrl: '/views/partials/activity-monitor.html',
         controller: 'activityMonitorCtrl'
       }
     }
   })
-      .state('projects', {
+      .state('injestion', {
     parent: 'template',
-    url: '/projects',
+    url: '/injestion',
     views: {
       "content": {
-        templateUrl: '/views/partials/projects.html',
+        templateUrl: '/views/partials/injestion.html',
         controller: 'projectsCtrl'
       },
       "menu": {
         templateUrl: '/views/partials/projects-menu.html',
-        controller: 'projectsCtrl'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
-      }
-    }
-  })
-      .state('newbrowser', {
-    parent: 'template',
-    url: '/newbrowser',
-    views: {
-      "content": {
-        templateUrl: '/views/partials/newbrowser-projects.html',
-        controller: 'projectsCtrl'
-      },
-      "menu": {
-        templateUrl: '/views/partials/newbrowser-projects-menu.html',
         controller: 'projectsCtrl'
       },
       "sidebar": {
@@ -77,23 +63,11 @@ app.config(function($stateProvider, $urlRouterProvider){
         controller: 'peopleCtrl'
       },
       "menu": {
-        templateUrl: '/views/partials/explore-menu.html',
-        controller: 'projectsCtrl'
+        templateUrl: '/views/partials/explore-menu.html'
       },
       "sidebar": {
         templateUrl: '/views/partials/activity-monitor.html',
         controller: 'activityMonitorCtrl'
-      }
-    }
-  })
-      .state('create', {
-    parent: 'template',
-    url: '/create',
-    templateUrl: '/views/partials/create.html',
-    views: {
-      "content": {
-        templateUrl: '/views/partials/create.html',
-        controller: 'playCtrl'
       }
     }
   })
@@ -105,16 +79,30 @@ app.config(function($stateProvider, $urlRouterProvider){
       "content": {
         templateUrl: '/views/partials/governance.html',
         controller: 'playCtrl'
+      },
+      "menu": {
+        templateUrl: '/views/partials/governance-menu.html'
+      },
+      "sidebar": {
+        templateUrl: '/views/partials/activity-monitor.html',
+        controller: 'activityMonitorCtrl'
       }
     }
   })
-      .state('configuration', {
+      .state('settings', {
     parent: 'template',
-    url: '/configuration',
+    url: '/settings',
     views: {
       "content": {
-        templateUrl: '/views/partials/configuration.html',
+        templateUrl: '/views/partials/settings.html',
         controller: 'playCtrl'
+      },
+      "menu": {
+        templateUrl: '/views/partials/settings-menu.html'
+      },
+      "sidebar": {
+        templateUrl: '/views/partials/activity-monitor.html',
+        controller: 'activityMonitorCtrl'
       }
     }
   });

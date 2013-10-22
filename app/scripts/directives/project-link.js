@@ -27,6 +27,8 @@ app.directive('projectLink', function($compile) {
 
             scope.$apply();
 
+            $("html, body").animate({ scrollTop: 0 });
+
         };
         
         elem.on('click', addProject);        

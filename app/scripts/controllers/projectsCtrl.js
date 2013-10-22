@@ -2,86 +2,84 @@
 
 var app = angular.module('myapp');
 
-app.controller('projectsCtrl', ['$scope', 'Reddit',
-        function ($scope, Reddit) {
-
-    $scope.reddit = new Reddit();
+app.controller('projectsCtrl', ['$scope',
+        function ($scope) {
 
 	$scope.projectList = [
 		{
-			name: "Fixed Income",
+			title: "Fixed Income",
 			serialNumber: "829300483271",
 			isFavorite:true
 		}, {
-			name: "Student Loan",
+			title: "Student Loan",
 			serialNumber: "829300483272",
 			isFavorite:true
 		}, {
-			name: "Mortgage",
+			title: "Mortgage",
 			serialNumber: "829300483273",
 			isFavorite:true
 		}, {
-			name: "Human Resources",
+			title: "Human Resources",
 			serialNumber: "829300483274",
 			isFavorite:false
 		}, {
-			name: "Estate Planning",
+			title: "Estate Planning",
 			serialNumber: "829300483275",
 			isFavorite:false
 		}, {
-			name: "Account Agreement",
+			title: "Account Agreement",
 			serialNumber: "829300483276",
 			isFavorite:false
 		}, {
-			name: "Bank Examination",
+			title: "Bank Examination",
 			serialNumber: "829300483277",
 			isFavorite:false
 		}, {
-			name: "Foreign Transaction Fees",
+			title: "Foreign Transaction Fees",
 			serialNumber: "829300483278",
 			isFavorite:false
 		}, {
-			name: "Payday Loans",
+			title: "Payday Loans",
 			serialNumber: "829300483279",
 			isFavorite:false
 		}, {
-			name: "Money Market Fund",
+			title: "Money Market Fund",
 			serialNumber: "829300483280",
 			isFavorite:false
 		}, {
-			name: "Home Equity Loan",
+			title: "Home Equity Loan",
 			serialNumber: "829300483281",
 			isFavorite:false
 		}, {
-			name: "Uncollected Funds",
+			title: "Uncollected Funds",
 			serialNumber: "829300483282",
 			isFavorite:false
 		}, {
-			name: "National Bank Examiner",
+			title: "National Bank Examiner",
 			serialNumber: "829300483283",
 			isFavorite:false
 		}, {
-			name: "Account History",
+			title: "Account History",
 			serialNumber: "829300483284",
 			isFavorite:false
 		}, {
-			name: "Revolving Credit",
+			title: "Revolving Credit",
 			serialNumber: "829300483285",
 			isFavorite:false
 		}, {
-			name: "Credit Application",
+			title: "Credit Application",
 			serialNumber: "829300483286",
 			isFavorite:false
 		}, {
-			name: "Canceled Checks",
+			title: "Canceled Checks",
 			serialNumber: "829300483287",
 			isFavorite:false
 		}, {
-			name: "Federal Reserve System",
+			title: "Federal Reserve System",
 			serialNumber: "829300483288",
 			isFavorite:false
 		}, {
-			name: "Loan Contract",
+			title: "Loan Contract",
 			serialNumber: "829300483289",
 			isFavorite:false
 		}

@@ -2,7 +2,7 @@
 
 var app = angular.module('auxFeatures');
 
-app.directive('configurationTab', function () {
+app.directive('destinationsTab', function () {
     return {
       restrict: 'A',
       replace: false,
@@ -10,6 +10,6 @@ app.directive('configurationTab', function () {
       // when project is collapsed or one tab at a time?
       scope: false,
       controller: 'projectTabsCtrl', 
-      templateUrl: '/views/partials/tabSlides/configuration-tab.html'
+      templateUrl: '/views/partials/tabSlides/destinations-tab.html'
     };
 });

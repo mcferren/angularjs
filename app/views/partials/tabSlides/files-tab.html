@@ -1,0 +1,104 @@
+<ul class="sortLinks"
+    ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+    <li ng-class="{'skinnyTableFirst':sidebarState, 'wideTableFirst':!sidebarState}">
+        <a ng-click="changeSort('filename')">Filename</a>
+    </li>
+    <li ng-class="{'skinnyTable':sidebarState, 'wideTable':!sidebarState}">
+        <a ng-click="changeSort('size')">Size</a>
+    </li>
+    <li ng-class="{'skinnyTable':sidebarState, 'wideTable':!sidebarState}">
+        <a ng-click="changeSort('type')">Type</a>
+    </li>
+    <li ng-class="{'skinnyTable':sidebarState, 'wideTable':!sidebarState}">
+        <a ng-click="changeSort('status')">Status</a>
+    </li>
+    <li class="specialColumnWide"
+        ng-if="sidebarState==false">
+        <a ng-click="changeSort('date')">Date Archived</a>
+    </li>
+    <li class="wideTable"
+        ng-if="sidebarState==false">
+        <a ng-click="changeSort('instance')">Orion Instance</a>
+    </li>
+    <li class="toolColumn">
+        <i class="icon-chevron-right icon-white"
+           ng-click="changeSidebarState()"
+           ng-if="sidebarState==true"></i>
+        <i class="icon-chevron-left icon-white"
+           ng-click="changeSidebarState()"
+           ng-if="sidebarState==false"></i>
+    </li>
+</ul>
+
+<div class="projectWrapper"
+     ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+</div>
+
+<div class="staticProjectCanvas tableFence" 
+     ng-class="{'skinny':sidebarState, 
+                'fat':!sidebarState, 
+                'spcShort':helpState, 
+                'spcTall':!helpState}"> 
+
+      <form class="input-append projectSearchRow dropup"
+            ng-class="{'birTall':helpState, 'birShort':!helpState}"
+            ng-submit="submit()">
+              <input id="projectSearch" 
+                     type="text" 
+                     data-msd-placeholder="Search for files within this project..." 
+                     data-ng-model="text">
+              <div class="projectSearchDropUp">
+                      <span class="caret"></span>
+              </div>
+              <!--
+              <ul class="dropdown-menu"
+                    ng-class="{'menuShort':helpState, 'menuTall':!helpState}">
+                ...
+              </ul>
+              -->
+              <div class="projectSearchPlacibo">
+                      <i class="icon-search"></i>
+              </div>
+      </form>
+
+
+      <div class="bottomProjectRow">
+          <div class="projectAuxCreateButton">
+            <a href="/">Download as .xls</a>
+            <i class="icon-arrow-down"></i>
+          </div>
+      </div>
+</div>  
+
+
+<div class="projectBody" nice-scrollbar infinite-scroll='loadingMore()' infinite-scroll-distance='10'>
+  <ul>
+    <li ng-repeat="row in body | orderBy:sortCriteria:reverse"
+        ng-cloak
+        ng-class="{'zebraRows':$odd}">
+          <span ng-class="{'skinnyTableFirst':sidebarState, 'wideTableFirst':!sidebarState}">
+              {{row.filename}}</span>
+          <span ng-class="{'skinnyTable':sidebarState, 'wideTable':!sidebarState}">
+              {{row.size}}</span>
+          <span ng-class="{'skinnyTable':sidebarState, 'wideTable':!sidebarState}">
+              {{row.type}}</span>  
+          <span ng-class="{'skinnyTable':sidebarState, 'wideTable':!sidebarState}">
+              {{row.status}}</span>  
+          <span class="specialColumnWide"
+                ng-if="sidebarState==false">
+              {{row.date | date:'MMM dd, yyyy'}}</span>  
+          <span class="wideTable"
+                ng-if="sidebarState==false">
+              {{row.instance}}</span>  
+    </li>
+    <li ng-repeat="jive in bunk"
+        ng-cloak>
+          <span>{{jive}}</span>
+          <span></span>
+          <span></span>  
+          <span></span>  
+          <span></span>  
+          <span></span>  
+    </li>
+  </ul>
+</div>

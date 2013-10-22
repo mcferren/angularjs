@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
     <link rel="stylesheet" href="styles/faux.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -23,9 +23,9 @@
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="bower_components/angular-smoothscroll/dist/scripts/481c90be.scripts.js"></script>
     <script src="bower_components/jquery-nicescroll/jquery.nicescroll.min.js"></script>
     <script src='bower_components/nginfinitescroll/build/ng-infinite-scroll.min.js'></script>
+    <script src='bower_components/angular-placeholder/placeholder.js'></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 
 
@@ -38,13 +38,11 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/services.js"></script>
-    <script src="scripts/services/reddit.js"></script>
     <script src="scripts/controllers.js"></script>
     <script src="scripts/controllers/templateCtrl.js"></script> 
     <script src="scripts/controllers/projectsCtrl.js"></script> 
     <script src="scripts/controllers/graphsCtrl.js"></script> 
     <script src="scripts/controllers/activityMonitorCtrl.js"></script> 
-    <script src="scripts/controllers/XXXprojectDetailCtrl.js"></script>
     <script src="scripts/controllers/projectTabsCtrl.js"></script>  
     <script src="scripts/filters/camelCase.js"></script>
     <script src="scripts/directives/project-link.js"></script>
@@ -52,13 +50,13 @@
     <script src="scripts/directives/headboard.js"></script>
     <script src="scripts/directives/project-detail.js"></script>
     <script src="scripts/directives/graph-detail.js"></script>
-    <script src="scripts/directives/split-screen_project_detail.js"></script>
-    <script src="scripts/directives/tabSlides/discovered-tab.js"></script>
-    <script src="scripts/directives/tabSlides/archived-tab.js"></script>
-    <script src="scripts/directives/tabSlides/expired-tab.js"></script>
-    <script src="scripts/directives/tabSlides/destroyed-tab.js"></script>
+    <script src="scripts/directives/tabSlides/files-tab.js"></script>
     <script src="scripts/directives/tabSlides/edit-tab.js"></script>
-    <script src="scripts/directives/tabSlides/configuration-tab.js"></script>
+    <script src="scripts/directives/tabSlides/stats-tab.js"></script>
+    <script src="scripts/directives/tabSlides/sources-tab.js"></script>
+    <script src="scripts/directives/tabSlides/channels-tab.js"></script>
+    <script src="scripts/directives/tabSlides/destinations-tab.js"></script>
+    <script src="scripts/directives/tabSlides/schedules-tab.js"></script>
     <script src="scripts/directives/nice_scroller.js"></script>
     <script src="scripts/directives/div_specific_inifinite_scroll.js"></script>
     <script src="scripts/directives/greenman.js"></script>

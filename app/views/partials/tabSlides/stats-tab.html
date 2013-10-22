@@ -1,0 +1,26 @@
+<ul class="sortLinks"
+    ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+</ul>
+
+<div class="projectWrapper"
+     ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+</div>
+
+<div class="staticProjectCanvas" 
+     ng-class="{'skinny':sidebarState, 
+                'fat':!sidebarState, 
+                'spcShort':helpState, 
+                'spcTall':!helpState}"> 
+		<div class="bottomBlank">
+		</div>
+		<div class="bottomFence">
+			<div class="leftBlinder"></div>
+			<div class="rightBlinder"></div>
+		</div>
+</div>
+
+<div class="projectBody" 
+	 nice-scrollbar 
+	 infinite-scroll='loadingMore()' 
+	 infinite-scroll-distance='10'>  
+</div>

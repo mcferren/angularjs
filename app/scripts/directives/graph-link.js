@@ -25,6 +25,8 @@ app.directive('graphLink', function($compile) {
 
             scope.$apply();
 
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+
         };
         
         elem.on('click', addGraph);        

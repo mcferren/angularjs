@@ -37,27 +37,33 @@
 			<li ng-class="{'active':selection == tabs[5]}">
 				<a ng-click="selection = tabs[5]">{{tabs[5] | camelCase}}</a>
 			</li>
+			<li ng-class="{'active':selection == tabs[6]}">
+				<a ng-click="selection = tabs[6]">{{tabs[6] | camelCase}}</a>
+			</li>
 		</ul>
 	</div>
 
 	<div ng-switch on="selection">
-		<div ng-switch-when="discovered">
-			<div discovered-tab></div>
-		</div>
-		<div ng-switch-when="archived">
-			<div archived-tab></div>
-		</div>
-		<div ng-switch-when="expired">
-			<div expired-tab></div>
-		</div>
-		<div ng-switch-when="destroyed">
-			<div destroyed-tab></div>
+		<div ng-switch-when="files">
+			<div files-tab></div>
 		</div>
 		<div ng-switch-when="edit">
 			<div edit-tab></div>
 		</div>
-		<div ng-switch-when="configuration">
-			<div configuration-tab></div>
+		<div ng-switch-when="stats">
+			<div stats-tab></div>
+		</div>
+		<div ng-switch-when="channels">
+			<div channels-tab></div>
+		</div>
+		<div ng-switch-when="sources">
+			<div sources-tab></div>
+		</div>
+		<div ng-switch-when="destinations">
+			<div destinations-tab></div>
+		</div>
+		<div ng-switch-when="schedules">
+			<div schedules-tab></div>
 		</div>
 	</div>
 </div>

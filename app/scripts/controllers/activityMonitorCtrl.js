@@ -2,10 +2,8 @@
 
 var app = angular.module('myapp');
 
-app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
-        function ($scope, Reddit) {
-
-    $scope.reddit = new Reddit();
+app.controller('activityMonitorCtrl', ['$scope',
+        function ($scope) {
 
 	$scope.activityLogList = [
 		 {
@@ -19,7 +17,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Skyler White",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:true
 		},  {
 			title: "Created destruction set",
 			body: "Created destruction set for 4403 files",
@@ -31,7 +30,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Jessen Pinkman",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:true
 		}, {
 			title: "Searched for .lmao files",
 			body: "Searched for .lmao files",
@@ -43,7 +43,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Mike Ehrmantraut",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:true
 		},  {
 			title: "Ingested 3044 files",
 			body: "Ingested 3044 files",
@@ -55,7 +56,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Walter White",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:true
 		},  {
 			title: "Created destruction set",
 			body: "Created destruction set for 2096 files",
@@ -67,7 +69,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Ted Beneke",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Searched for .pdf files",
 			body: "Searched for .pdf files larger than 35KB",
@@ -79,7 +82,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Gus Fring",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Issue with destruction set",
 			body: "Issue with destruction set. Cannot read .bff extension",
@@ -91,7 +95,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Completed destruction set",
 			body: "Completed destruction set",
@@ -103,7 +108,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Ted Beneke",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Searched for .pdf files",
 			body: "Searched for .pdf files larger than 35KB",
@@ -115,7 +121,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Walter White",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Created hold set",
 			body: "Created hold set for 445 files",
@@ -127,7 +134,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Saul Goodman",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		},{
 			title: "Created hold set",
 			body: "Created hold set for 445 files",
@@ -139,7 +147,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Jesse Pinkman",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Searched for .pdf files",
 			body: "Searched for .pdf files larger than 54KB",
@@ -151,7 +160,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Gus Fring",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Issue with destruction set",
 			body: "Issue with destruction set. Cannot read .omg extension",
@@ -163,7 +173,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Ingested 7892 files",
 			body: "Ingested 7892 files",
@@ -175,7 +186,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Jesse Pinkman",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		},  {
 			title: "Issue with injestion set",
 			body: "Issue with destruction set. Cannot read .brb extension",
@@ -187,7 +199,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		},  {
 			title: "Searched for .pdf files",
 			body: "Searched for .pdf files created after 3/2/2010",
@@ -199,7 +212,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Walter White",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Ingested 7892 files",
 			body: "Ingested 7892 files",
@@ -211,7 +225,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Ted Beneke",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Issue with injection set",
 			body: "Issue with destruction set. Cannot read .lol extension",
@@ -223,7 +238,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Ingested 7892 files",
 			body: "Ingested all 7892 files",
@@ -235,7 +251,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Hank Schrader",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		},  {
 			title: "Searched for .shx files",
 			body: "Searched for .shx files",
@@ -247,7 +264,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Ted Beneke",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Searched for .png files",
 			body: "Searched for .png files smaller than 10KB",
@@ -259,7 +277,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Walter White",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Searched for .pdf files",
 			body: "Searched for .pdf files created after 3/2/2010",
@@ -271,7 +290,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Saul Goodman",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Created hold set",
 			body: "Created hold set fpr 1092 files",
@@ -283,7 +303,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Jesse Pinkman",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		},  {
 			title: "Ingested 452 files",
 			body: "Ingested 452 files",
@@ -295,7 +316,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Gus Fring",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Issue with destruction set",
 			body: "Issue with destruction set. Cannot read .ttyl extension",
@@ -307,7 +329,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}, {
 			title: "Searched for .rotlf files",
 			body: "Searched for .rotlf files",
@@ -319,7 +342,8 @@ app.controller('activityMonitorCtrl', ['$scope', 'Reddit',
 			user: "Jesse Pinkman",
 			source: "Drive A",
 			destination: "Drive B",
-			quantity: "3483403"
+			quantity: "3483403",
+			isFavorite:false
 		}
 	];
 

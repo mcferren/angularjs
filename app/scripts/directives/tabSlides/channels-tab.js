@@ -2,7 +2,7 @@
 
 var app = angular.module('auxFeatures');
 
-app.directive('archivedTab', function () {
+app.directive('channelsTab', function () {
     return {
       restrict: 'A',
       replace: false,
@@ -10,6 +10,6 @@ app.directive('archivedTab', function () {
       // when project is collapsed or one tab at a time?
       scope: false,
       controller: 'projectTabsCtrl', 
-      templateUrl: '/views/partials/tabSlides/archived-tab.html'
+      templateUrl: '/views/partials/tabSlides/channels-tab.html'
     };
 });

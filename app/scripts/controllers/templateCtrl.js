@@ -6,12 +6,10 @@ app.controller('templateCtrl', ['$scope',
         function ($scope) {
 
     $scope.menuItems = [
-      'projects',
-      //'newbrowser',
+      'injestion',
       'explore',
       'governance',
-      'create',
-      'configuration'
+      'settings'
     ];
 
     $scope.sessionItems = [
@@ -20,12 +18,21 @@ app.controller('templateCtrl', ['$scope',
     ];
 
     $scope.footerItems = [
-      'InfoBelt Website',
+      '© InfoBelt, LLC',
       'Contact'
     ];
 
     $scope.sidebarState = true;
 
+    $scope.changeSidebarState = function() {
+        $scope.sidebarState = !$scope.sidebarState;
+    }
+
     $scope.helpState = false;
+
+    $scope.submit = function(){
+      $scope.text = '';
+      $scope.formTest.$setPristine();
+    };
 
   }]);

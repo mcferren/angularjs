@@ -1,0 +1,25 @@
+<h3 green-man>Dashboard</h3>
+
+<div class="contentMenuControls cmcDecorationsGraph graphMenuTop" 
+	 nice-scrollbar>
+	<ul class="contentMenuSelections" 
+		ng-controller="graphsCtrl"> 
+
+		<li ng-repeat="singleGraph in graphList"
+			ng-mouseenter="gshow = true" 
+			ng-mouseleave="gshow = false">
+		    <div class="leftTool">
+			</div>
+			<span ng-class="{'lastListItem':$last}"> 
+				<a href="" 
+				   graph-link
+				   graphid="{{singleGraph.graphID}}"
+				   offset="65">{{singleGraph.name}}
+				</a>
+			</span>
+			<div class="rightTool">
+			</div>
+		</li>
+	</ul>
+</div>
+
