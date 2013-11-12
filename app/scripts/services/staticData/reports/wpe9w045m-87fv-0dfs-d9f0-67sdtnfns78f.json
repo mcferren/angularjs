@@ -1,0 +1,171 @@
+{
+  "id" : "wpe9w045m-87fv-0dfs-d9f0-67sdtnfns78f",
+  "name" : "schedules",
+  "parameters" : {
+    "projectId" : "20388ED8-ECDF-4326-BDB3-E3F50F0658DE",
+    "placeholder" : "Search for Schedule...",
+    "buttontext" : "Add New Schedule",
+    "buttonicon" : "icon-plus"
+  },
+  "columnNames" : {
+    "schedulename" : "Schedule Name",
+    "size" : "Size",
+    "type" : "Type",
+    "status" : "Status"
+  },
+  "columnTypes" : {
+    "schedulename" : "NUMERIC",
+    "size" : "NUMERIC",
+    "type" : "NUMERIC",
+    "status" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "schedulename" : "",
+    "size" : "",
+    "type" : "",
+    "status" : ""
+  },
+  "rows" : [
+               {
+                "schedulename": "2394820",
+                "size": "55KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "23840234",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "schedulename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "schedulename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "schedulename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "schedulename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }
+  ]
+}

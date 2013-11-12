@@ -157,6 +157,7 @@ text-decoration: none;
 
 #sideClick, #helpClick {
 margin-top:-2px;
+outline:none;
 }
 
 .contentCanvas, footer, .footerCanvas {
@@ -249,6 +250,7 @@ height:13px !important;
 line-height:13px !important;
 padding-top:5px !important;
 padding-bottom:2px !important;
+outline:none;
 }
 
 .canvasPot form {
@@ -509,26 +511,16 @@ right:40px;
 top:109px;
 }
 
-#projectAutoComplete, 
-#createProjectNaming, 
-#sidebarAutoComplete {
+#projectAutoComplete, #sidebarAutoComplete {
 width:135px;
 font-size:11px;
 height:12px !important;
 line-height:12px !important;
 padding:5px 6px 3px 6px !important;
-}
-
-#projectAutoComplete, #sidebarAutoComplete {
 -webkit-border-bottom-left-radius:0 !important;
    -moz-border-bottom-left-radius:0 !important;
         border-bottom-left-radius:0 !important;
-}
-
-#createProjectNaming {
--webkit-border-top-left-radius:0 !important;
-   -moz-border-top-left-radius:0 !important;
-        border-top-left-radius:0 !important;
+outline:none;
 }
 
 .autoCompletePlaciboButton {
@@ -572,7 +564,7 @@ background-position-x: -48px !important;
 background-position-y: -1px !important;
 }
 
-.injestButton i {
+.ingestButton i {
 margin:0px !important;
 background-position-x: -288px;
 background-position-y: -145px;
@@ -667,6 +659,7 @@ padding:2px 0px 1px 0px;
 font-weight:bold;
 height:18px;
 overflow:hidden;
+border-bottom: 1px solid #ccc;
 }
 
 .projectBlock a {
@@ -704,6 +697,10 @@ list-style:none;
 .specialColumnWide {
 width:17%;
 padding-left:15px;
+}
+
+.ghostTable {
+width:0%;
 }
 
 .projectBody li {
@@ -761,7 +758,8 @@ position:fixed;
 right:20px;
 z-index:1000;
 overflow:hidden;
-height:42px;
+height:47px;
+border-top: 1px solid #ccc;
 }
 
 .staticProjectCanvasAux {
@@ -795,50 +793,96 @@ bottom:43px;
 
 .projectSearchRow {
 margin:0px 0px 17px 0px !important;
+padding:5px;
 float:left !important;
+height:19px;
+background-color:#ddd;
+
+-webkit-border-top-left-radius: 0 !important;
+-moz-border-top-left-radius: 0 !important;
+border-top-left-radius: 0 !important;
+-webkit-border-top-right-radius: 0 !important;
+-moz-border-top-right-radius: 0 !important;
+border-top-right-radius: 0 !important;
+-webkit-border-bottom-right-radius: 0 !important;
+-moz-border-bottom-right-radius: 0 !important;
+border-bottom-right-radius: 0 !important;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
 }
 
 #projectSearch {
-width:200px;
+width:245px;
 font-size:11px;
 height:12px !important;
 line-height:12px !important;
 padding:4px 6px 2px 6px !important;
+border: none;
+float:left;
+outline:none;
 -webkit-border-top-left-radius:0 !important;
    -moz-border-top-left-radius:0 !important;
         border-top-left-radius:0 !important;
-border: 5px solid #ddd;
-float:left;
+-webkit-border-top-right-radius:0 !important;
+   -moz-border-top-right-radius:0 !important;
+        border-top-right-radius:0 !important;
+-webkit-border-bottom-right-radius:0 !important;
+   -moz-border-bottom-right-radius:0 !important;
+        border-bottom-right-radius:0 !important;
 }
 
 .projectSearchRow .projectSearchDropUp,
 .projectSearchRow .projectSearchPlacibo {
 height:18px;
-width:25px;
-float:left;
-padding:5px 2px 5px 0px;
+width:20px;
 -webkit-border-radius:0 !important;
    -moz-border-radius:0 !important;
         border-radius:0 !important;
 background-color:#ddd;
+display:block;
+float:left;
 }
 
 .projectSearchRow .projectSearchDropUp:hover,
 .projectSearchRow .projectSearchPlacibo:hover {
 cursor:pointer;
+background-color:#ccc;
 }
 
-/*
-.projectSearchRow .projectSearchDropUp:hover span,
-.projectSearchRow .projectSearchDropUp:hover i,
-.projectSearchRow .projectSearchPlacibo:hover span,
-.projectSearchRow .projectSearchPlacibo:hover i {
-background-color:#B6B6B6;
-}*/
-
 .projectSearchRow .projectSearchDropUp span {
-background-color:#fff;
-padding:4px 3px 4px 3px;
+margin:7px 3px 3px 6px;
+}
+
+.dropup .caret {
+border-bottom: 4px solid #fff !important; 
+}
+
+.projectSearchRow .projectSearchDropUp:hover span.caret {
+border-bottom: 4px solid #000 !important;
+}
+
+.projectSearchToolSeparator {
+float:left;
+background-color:#ddd;
+height:24px;
+}
+
+.projectSearchToolSeparator span {
+border-right: 1px solid #ccc;
+float:left;
+height:18px;
+}
+
+
+.projectSearchRow .projectSearchPlacibo {
+width:23px;
+text-align:center;
+}
+
+.projectSearchRow .projectSearchPlacibo i {
+margin:-8px 0px 0px 0px;
 }
 
 .bottomBlank {
@@ -887,7 +931,7 @@ background-color:#F5F5F5;
 .bottomProjectRow  {
 overflow: hidden !important;
 padding:2px 3px 0px 0px;
-height:24px;
+height:25px;
 text-align:right;
 background-color:#ddd;
 
@@ -915,7 +959,10 @@ margin-top:-1px;
 }
 
 .projectAuxCreateButton {
-width:100px;
+padding-top:2px;
+background-color:#ddd;
+font-weight:bold;
+width:160px;
 float:right;
 }
 
@@ -954,8 +1001,51 @@ text-align:center;
 display:block;
 }
 
-#projectTitle {
-width:200px;
+.editInput {
+width:49% !important;
+outline:none;
+float:left;
+display:block;
+}
+
+.editInputOdd {
+margin-right:2%;
+}
+
+.titleSelection {
+color:#ccc !important;
+}
+
+form select option.choices {
+color:#000;
+}
+
+.projectBody .statsBody {
+padding:20px 30px;
+}
+
+.statsBody table {
+width:100%;
+}
+
+.statsBody td {
+width:33%;
+text-align:center;
+padding-bottom:20px;
+}
+
+.statsBody p {
+text-align:justify;
+}
+
+.statsBody img {
+width:30px !important;
+height:30px;
+}
+
+.statsBody em {
+font-weight:bold;
+font-style:none;
 }
 
 /*************************************

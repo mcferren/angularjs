@@ -1,4 +1,3 @@
-
 // Controller for the No-Frills Orion UI
 
 app.controller('noFrillsController', function ($scope,$log,api) {
@@ -45,7 +44,7 @@ app.controller('noFrillsController', function ($scope,$log,api) {
         $scope.clearUser();
         api.delete("users/"+userId).
             success(function(data, status, headers, config) {
-                $scope.users = $http.get("/api/1/users");
+                $scope.users = api.get("users");
             }).
             error(function(data, status, headers, config) {
                 alert("HTTP ERROR "+status);
@@ -60,7 +59,7 @@ app.controller('noFrillsController', function ($scope,$log,api) {
         $scope.clearUser();
         api.post("users",user).
             success(function(data, status, headers, config) {
-                $scope.users = $http.get("/api/1/users");
+                $scope.users = api.get("users");
             }).
             error(function(data, status, headers, config) {
                 alert("HTTP ERROR "+status);
@@ -102,7 +101,7 @@ app.controller('noFrillsController', function ($scope,$log,api) {
     //
 
     $scope.viewRoles = function() {
-        $scope.roles = $http.get("/api/1/roles");
+        $scope.roles = api.get("roles");
         $scope.view = "roles";
     }
 
@@ -160,6 +159,74 @@ app.controller('noFrillsController', function ($scope,$log,api) {
         api.put("roles/"+$scope.roleId,role).
             success(function(data, status, headers, config) {
                 $scope.roles = api.get("roles");
+            }).
+            error(function(data, status, headers, config) {
+                alert("HTTP ERROR "+status);
+            })
+    }
+
+    //
+    // Projects
+    //
+
+    $scope.viewProjects = function() {
+        $scope.projects = api.get("projects");
+        $scope.view = "projects";
+    }
+
+    $scope.getProject = function(projectId) {
+        api.get("projects/"+projectId).
+            success(function(data, status, headers, config) {
+                $scope.projectId = data.id;
+                $scope.projectName = data.name;
+                $scope.projectEdit = true;
+            }).
+            error(function(data, status, headers, config) {
+                alert("HTTP ERROR "+status);
+                $scope.projectEdit = false;
+                $scope.projectName = null;
+                $scope.projectEmail = null;
+            });
+    }
+
+    $scope.deleteProject = function(projectId) {
+        $scope.projectEdit = false;
+        $scope.projectName = null;
+        $scope.projectEmail = null;
+        api.delete("projects/"+projectId).
+            success(function(data, status, headers, config) {
+                $scope.projects = api.get("projects");
+            }).
+            error(function(data, status, headers, config) {
+                alert("HTTP ERROR "+status);
+            });
+    }
+
+    $scope.postProject = function() {
+        project = {
+            name : $scope.projectName
+        };
+        $scope.projectEdit = false;
+        $scope.projectName = null;
+        api.post("projects",project).
+            success(function(data, status, headers, config) {
+                $scope.projects = api.get("projects");
+            }).
+            error(function(data, status, headers, config) {
+                alert("HTTP ERROR "+status);
+            })
+    }
+
+    $scope.saveProjects = function() {
+        role = {
+            id : $scope.projectId,
+            name : $scope.projectName
+        };
+        $scope.projectEdit = false;
+        $scope.projectName = null;
+        api.put("projects/"+$scope.projectId,project).
+            success(function(data, status, headers, config) {
+                $scope.projects = api.get("projects");
             }).
             error(function(data, status, headers, config) {
                 alert("HTTP ERROR "+status);

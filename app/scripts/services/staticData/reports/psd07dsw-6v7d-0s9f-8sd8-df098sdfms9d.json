@@ -1,0 +1,171 @@
+{
+  "id" : "psd07dsw-6v7d-0s9f-8sd8-df098sdfms9d",
+  "name" : "sources",
+  "parameters" : {
+    "projectId" : "20388ED8-ECDF-4326-BDB3-E3F50F0658DE",
+    "placeholder" : "Search for Storage Media...",
+    "buttontext" : "Add New Storage Media",
+    "buttonicon" : "icon-plus"
+  },
+  "columnNames" : {
+    "sourcename" : "Source Name",
+    "size" : "Size",
+    "type" : "Type",
+    "status" : "Status"
+  },
+  "columnTypes" : {
+    "sourcename" : "NUMERIC",
+    "size" : "NUMERIC",
+    "type" : "NUMERIC",
+    "status" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "sourcename" : "",
+    "size" : "",
+    "type" : "",
+    "status" : ""
+  },
+  "rows" : [
+               {
+                "sourcename": "2394820",
+                "size": "55KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "23840234",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "sourcename": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "sourcename": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "sourcename": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "sourcename": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }
+  ]
+}

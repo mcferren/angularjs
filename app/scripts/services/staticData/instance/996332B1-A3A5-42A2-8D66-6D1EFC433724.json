@@ -1,0 +1,36 @@
+{
+  "id" : "996332B1-A3A5-42A2-8D66-6D1EFC433724",
+  "name" : "Instance One",
+  "type" : "instance",
+  "reports" : [
+    {
+      "id" : "8sjd9sm3-m8ds-w90w-8dfs-1n0sd0nsd0i3",
+      "name" : "retention",
+      "label" : "Retention Policies",
+      "layout" : "table"
+    },{
+      "id" : "g89d4js0-n48s-0dms-2ms0-sjid80sd90sd",
+      "name" : "metadata",
+      "label" : "Metadata Templates",
+      "layout" : "table"
+    },{
+      "id" : "osloeois-389s-ud8d-lsod-wioe0sdu0s9u",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ],
+  "attributes" : [
+    {
+      "name" : "owner",
+      "label" : "Owner",
+      "type" : "text",
+      "value" : "Meet Taylor"
+    },{
+      "name" : "description",
+      "label" : "Description",
+      "type" : "textarea",
+      "value" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore"
+    }
+  ]
+}

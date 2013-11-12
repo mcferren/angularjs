@@ -1,0 +1,112 @@
+<div class="content skinny" 
+   ng-class="{'skinny':templateState.sidebarState, 
+   			  'fat':!templateState.sidebarState}"
+   ui-view="content" >
+</div> 
+
+<div class="contentCanvas well" 
+   ng-class="{'skinny':templateState.sidebarState, 
+              'fat':!templateState.sidebarState, 
+              'ccTall':templateState.helpState, 
+              'ccShort':!templateState.helpState}"> 
+</div>  
+
+<div class="contentMenu">
+	<h3 green-man nodetype="{{headertype | camelCase}}"></h3>
+
+	<div class="contentMenuControls cmcDecorationsNormal normalTop" 
+	     ng-class="{'cmcTall':templateState.helpState, 
+	     			'cmcShort':!templateState.helpState}"
+		 nice-scrollbar>
+		<ul class="contentMenuSelections"> 
+		<!-- infinite-scroll='loadMore()' 
+			 infinite-scroll-distance='10' -->
+
+			<li ng-repeat="node in nodeList"
+			    ng-mouseenter="nodeToolsShow = true" 
+			    ng-mouseleave="nodeToolsShow = false"
+			    ng-cloak>
+			    <div class="leftTool">
+					<!--
+					<i class="icon-star"
+					   ng-show="nodeToolsShow"
+					   ng-if="node.isFavorite==true"
+					   ng-click="node.isFavorite = false"></i>
+					<i class="icon-star-empty"
+					   ng-show="nodeToolsShow"
+					   ng-if="node.isFavorite==false"
+					   ng-click="node.isFavorite = true"></i>
+					-->
+					<i class="icon-star-empty"
+					   ng-show="nodeToolsShow"></i>
+				</div>
+			    <span ng-class="{'lastListItem':$last}">
+			    	<a ng-href="#/{{headertype}}/{{node.id}}"> 
+			    	<!--target="p{{node.serialNumber}}" -->
+					   	{{node.name}}
+					</a>
+				</span>
+			    
+				<div class="rightTool">
+				</div>
+			</li>
+
+			<!--
+			<li ng-repeat="image in images"
+			    ng-mouseenter="nodeToolsShow = true" 
+			    ng-mouseleave="nodeToolsShow = false"
+			    ng-cloak>
+			    <div class="leftTool">
+					<i class="icon-star"
+					   ng-show="nodeToolsShow"
+					   ng-if="node.isFavorite==true"
+					   ng-click="node.isFavorite = false"></i>
+					<i class="icon-star-empty"
+					   ng-show="nodeToolsShow"
+					   ng-if="node.isFavorite==false"
+					   ng-click="node.isFavorite = true"></i>
+				</div>
+				<span>
+					<a href="" 
+					   target="p{{$index}}" 
+					   offset="116">
+					   		{{image}}
+					</a>
+				</span>
+				<div class="rightTool">
+				</div>
+			</li>-->
+
+			<li ng-show='reddit.busy'>Loading data...</li>
+		</ul>
+	</div>
+
+	<form class="input-append projectAutoCompleteRow" 
+		  ng-submit="submit()">
+		<input id="projectAutoComplete" 
+			   type="text" 
+			   data-msd-placeholder="Search for {{nodeSearchLabel | camelCase}}..." 
+			   data-ng-model="text">
+		<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu normalTop"
+	      	ng-class="{'menuShort':templateState.helpState, 'menuTall':!templateState.helpState}">
+		  ...
+		</ul>
+		<button type="submit" 
+				class="btn btn-mini autoCompletePlaciboButton">
+			<i class="icon-search"></i>
+		</button>
+	</form>
+
+	<form class="bottomButtonRow dropup"
+	      ng-class="{'bbrTall':templateState.helpState, 'bbrShort':!templateState.helpState}">
+		<button type="submit" 
+				class="btn btn-mini" 
+				id="createUserPlus">
+			Create New {{nodeButtonLabel | camelCase}}
+			<i class="icon-plus"></i>
+		</button>
+	</form>
+</div>

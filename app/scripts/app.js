@@ -10,100 +10,97 @@ angular.module('auxFeatures', []);
 
 app.config(function($stateProvider, $urlRouterProvider){
   
-  $urlRouterProvider.otherwise('/home/dashboard');
+  $urlRouterProvider.otherwise('/dashboard');
  
   $stateProvider
       .state('template', {
     abstract: true,
-    url: '/home',
+    url: '',
     templateUrl: '/views/partials/template.html',
     controller: 'templateCtrl'
   })
-      .state('dashboard', {
+     .state('sidebar', {
+    abstract: true,
     parent: 'template',
-    url: '/dashboard',
+    url: '',
     views: {
-      "content": {
-        templateUrl: '/views/partials/dashboard.html'
-      },
-      "menu": {
-        templateUrl: '/views/partials/graphs-menu.html',
-        controller: 'projectsCtrl'
-      },
       "sidebar": {
         templateUrl: '/views/partials/activity-monitor.html',
         controller: 'activityMonitorCtrl'
       }
     }
   })
-      .state('injestion', {
-    parent: 'template',
-    url: '/injestion',
+  .state('nodemenu', {
+    parent: 'sidebar',
+    url: '/{headertype:dashboard|ingestion|explore|governance|users|storage}',
     views: {
-      "content": {
-        templateUrl: '/views/partials/injestion.html',
-        controller: 'projectsCtrl'
-      },
       "menu": {
-        templateUrl: '/views/partials/projects-menu.html',
-        controller: 'projectsCtrl'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
+        templateUrl: '/views/partials/node-menu.html',
+        controller: 'node-menuCtrl'
       }
+    },
+    onEnter: function($rootScope, $stateParams){
+
+        $rootScope.currentTabType = null;
+        $rootScope.currentNodeID = null;
+        $rootScope.currentHeaderType = $stateParams.headertype;
+
+        switch ($stateParams.headertype)
+        {
+          case 'dashboard': 
+                    $rootScope.currentNodeType = 'graphic';
+                    break;
+          case 'ingestion': 
+                    $rootScope.currentNodeType = 'project';
+                    break;
+          case 'governance': 
+                    $rootScope.currentNodeType = 'instance';
+                    break;
+          case 'users': 
+                    $rootScope.currentNodeType = 'user';
+                    break;
+          case 'storage': 
+                    $rootScope.currentNodeType = 'storage';
+                    break;
+          default:  $rootScope.currentNodeType = null
+        }
+
+        // these logs are to help debug templateCtrl $rootScope $watch bug
+        console.log('MENU currentHeaderType: ', $rootScope.currentHeaderType);
+        console.log('MENU currentNodeType: ', $rootScope.currentNodeType);
+        console.log('MENU currentNodeID: ', $rootScope.currentNodeID);
+        console.log('MENU currentTabType: ', $rootScope.currentTabType);
     }
   })
-      .state('explore', {
-    parent: 'template',
-    url: '/explore',
-    views: {
-      "content": {
-        templateUrl: '/views/partials/explore.html',
-        controller: 'peopleCtrl'
-      },
-      "menu": {
-        templateUrl: '/views/partials/explore-menu.html'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
-      }
+  .state('singlenode', {
+    parent: 'nodemenu',
+    url: '/:nodeid',
+    onEnter: function($rootScope, $stateParams){
+
+        $rootScope.currentTabType = null;
+        $rootScope.currentNodeID = $stateParams.nodeid;
+
+        // these logs are to help debug templateCtrl $rootScope $watch bug
+        console.log('NODE currentHeaderType: ', $rootScope.currentHeaderType);
+        console.log('NODE currentNodeID: ', $rootScope.currentNodeID);
+        console.log('NODE currentNodeType: ', $rootScope.currentNodeType);
+        console.log('NODE currentTabType: ', $rootScope.currentTabType);
+
     }
   })
-      .state('governance', {
-    parent: 'template',
-    url: '/governance',
-    templateUrl: '/views/partials/governance.html',
-    views: {
-      "content": {
-        templateUrl: '/views/partials/governance.html',
-        controller: 'playCtrl'
-      },
-      "menu": {
-        templateUrl: '/views/partials/governance-menu.html'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
-      }
-    }
-  })
-      .state('settings', {
-    parent: 'template',
-    url: '/settings',
-    views: {
-      "content": {
-        templateUrl: '/views/partials/settings.html',
-        controller: 'playCtrl'
-      },
-      "menu": {
-        templateUrl: '/views/partials/settings-menu.html'
-      },
-      "sidebar": {
-        templateUrl: '/views/partials/activity-monitor.html',
-        controller: 'activityMonitorCtrl'
-      }
+  .state('tab', {
+    parent: 'singlenode',
+    url: '/:tabtype',
+    onEnter: function($rootScope, $stateParams){
+
+        $rootScope.currentTabType = $stateParams.tabtype;
+
+        // these logs are to help debug templateCtrl $rootScope $watch bug
+        console.log('TAB currentHeaderType: ', $rootScope.currentHeaderType);
+        console.log('TAB currentNodeID: ', $rootScope.currentNodeID);
+        console.log('TAB currentNodeType: ', $rootScope.currentNodeType);
+        console.log('TAB currentTabType: ', $rootScope.currentTabType);
+
     }
   });
 

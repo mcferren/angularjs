@@ -1,127 +1,145 @@
-<h3  green-man>Activity Monitor</h3>
+<div class="contentMenu" 
+   ui-view="menu" >
+</div> 
 
-<div class="sidebarControls normalTop" nice-scrollbar>
-	<ul class="sidebarContentSelections">
-	<!--<ul class="sidebarContentSelections"> --><!--infinite-scroll='loadMore()' infinite-scroll-distance='10'-->
-		<li ng-repeat="singleActivityEvent in activityLogList"
-       		ng-switch on="singleActivityEvent.category"
-       		ng-class="{'openedActivityEvent':singleActivityEvent.isOpened, 
-       				   '':!singleActivityEvent.isOpened}"
-		    ng-mouseenter="activityToolsShow = true" 
-		    ng-mouseleave="activityToolsShow = false"
-		    ng-cloak>
+<div ng-class="{'skinny':templateState.sidebarState, 
+              'fat':!templateState.sidebarState, 
+              'bottomshelfTall':templateState.helpState, 
+              'bottomshelfShort':!templateState.helpState}" > 
+</div> <!-- simply an underline to controlz-index -->
 
-		    <div class="leftTool">
-				<button type="button" 
-				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-						class="btn btn-success sidebarButton createButton"
-						ng-switch-when="create">
-							<i class="icon-white icon-plus-sign"></i>
-				</button>
-				<button type="button" 
-				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-						class="btn btn-success sidebarButton completeButton"
-						ng-switch-when="complete">
-							<i class="icon-white icon-ok-sign"></i>
-				</button>
-				<button type="button" 
-				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-						class="btn btn-success sidebarButton injestButton"
-						ng-switch-when="injest">
-							<i class="icon-white icon-circle-arrow-up"></i>
-				</button>
-				<button type="button" 
-				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-						class="btn btn-success sidebarButton searchButton"
-						ng-switch-when="search">
-							<i class="icon-white icon-search"></i>
-				</button>
-				<button type="button" 
-				 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-						class="btn btn-danger sidebarButton issueButton"
-						ng-switch-when="issue">
-							<i class="icon-white icon-exclamation-sign"></i>
-				</button>
-			</div>
-
-			<span ng-class="{'lastListItem':$last}">
-	       		<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
-						{{singleActivityEvent.title}}
-				</a>
-			</span>
-
-			<div class="rightTool">
-				<i class="icon-star"
-				   ng-show="activityToolsShow"
-				   ng-if="singleActivityEvent.isFavorite==true"
-				   ng-click="singleActivityEvent.isFavorite = false"></i>
-				<i class="icon-star-empty"
-				   ng-show="activityToolsShow"
-				   ng-if="singleActivityEvent.isFavorite==false"
-				   ng-click="singleActivityEvent.isFavorite = true"></i>
-			</div>
-
-			<ul ng-if="singleActivityEvent.isOpened==true">
-				<li>
-					<em>Who:</em>
-					<div>
-						{{singleActivityEvent.user}}
-					</div>
-				</li>
-	       		<li>
-					<em>What:</em>
-					<div>
-						<a href="" 
-						   project-link
-						   projectid="{{singleActivityEvent.serialNumber}}"
-						   offset="116">
-						   		{{singleActivityEvent.projectName}}
-						</a>
-					</div>
-	       		</li>
-	       		<li>
-					<em>When:</em>
-					<div>
-						{{singleActivityEvent.timestamp | date:'MMM dd yyyy hh:mm a'}}
-					</div>
-	       		</li>
-	       		<li>
-					<em>Where from:</em>
-					<div>
-						{{singleActivityEvent.source}}
-					</div>
-	       		</li>
-	       		<li>
-					<em>Where to:</em>
-					<div>
-						{{singleActivityEvent.destination}}
-					</div>
-	       		</li>
-	       		<li>
-					<em>How many:</em>
-					<div>
-						{{singleActivityEvent.quantity}}
-					</div>
-	       		</li>
-			</ul>
-       	</li>
-    </ul>
+<div class="sidebar well" 
+   ng-show="templateState.sidebarState">
 </div>
 
-<form class="input-append sidebarAutoCompleteRow" 
-	  ng-submit="submit()">
-	<input id="sidebarAutoComplete" 
-		   type="text" 
-		   data-msd-placeholder="Search for Log Events..." 
-		   data-ng-model="text">
-	<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
-		<span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu normalTop">
-	  ...
-	</ul>
-	<button type="submit" 
-			class="btn btn-mini autoCompletePlaciboButton">
-		<i class="icon-search"></i>
-	</button>
-</form>
+<div class="sidebarMenu" 
+   ng-show="templateState.sidebarState">
+
+	<h3 green-man>Activity Monitor</h3>
+
+	<div class="sidebarControls normalTop" nice-scrollbar>
+		<ul class="sidebarContentSelections">
+		<!--<ul class="sidebarContentSelections"> --><!--infinite-scroll='loadMore()' infinite-scroll-distance='10'-->
+			<li ng-repeat="singleActivityEvent in activityLogList"
+	       		ng-switch on="singleActivityEvent.category"
+	       		ng-class="{'openedActivityEvent':singleActivityEvent.isOpened, 
+	       				   '':!singleActivityEvent.isOpened}"
+			    ng-mouseenter="activityToolsShow = true" 
+			    ng-mouseleave="activityToolsShow = false"
+			    ng-cloak>
+
+			    <div class="leftTool">
+					<button type="button" 
+					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+							class="btn btn-success sidebarButton createButton"
+							ng-switch-when="create">
+								<i class="icon-white icon-plus-sign"></i>
+					</button>
+					<button type="button" 
+					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+							class="btn btn-success sidebarButton completeButton"
+							ng-switch-when="complete">
+								<i class="icon-white icon-ok-sign"></i>
+					</button>
+					<button type="button" 
+					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+							class="btn btn-success sidebarButton ingestButton"
+							ng-switch-when="ingest">
+								<i class="icon-white icon-circle-arrow-up"></i>
+					</button>
+					<button type="button" 
+					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+							class="btn btn-success sidebarButton searchButton"
+							ng-switch-when="search">
+								<i class="icon-white icon-search"></i>
+					</button>
+					<button type="button" 
+					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
+							class="btn btn-danger sidebarButton issueButton"
+							ng-switch-when="issue">
+								<i class="icon-white icon-exclamation-sign"></i>
+					</button>
+				</div>
+
+				<span ng-class="{'lastListItem':$last}">
+		       		<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
+							{{singleActivityEvent.title}}
+					</a>
+				</span>
+
+				<div class="rightTool">
+					<i class="icon-star"
+					   ng-show="activityToolsShow"
+					   ng-if="singleActivityEvent.isFavorite==true"
+					   ng-click="singleActivityEvent.isFavorite = false"></i>
+					<i class="icon-star-empty"
+					   ng-show="activityToolsShow"
+					   ng-if="singleActivityEvent.isFavorite==false"
+					   ng-click="singleActivityEvent.isFavorite = true"></i>
+				</div>
+
+				<ul ng-if="singleActivityEvent.isOpened==true">
+					<li>
+						<em>Who:</em>
+						<div>
+							{{singleActivityEvent.user}}
+						</div>
+					</li>
+		       		<li>
+						<em>What:</em>
+						<div>
+							<a href="" 
+							   project-link
+							   projectid="{{singleActivityEvent.serialNumber}}"
+							   offset="116">
+							   		{{singleActivityEvent.projectName}}
+							</a>
+						</div>
+		       		</li>
+		       		<li>
+						<em>When:</em>
+						<div>
+							{{singleActivityEvent.timestamp | date:'MMM dd yyyy hh:mm a'}}
+						</div>
+		       		</li>
+		       		<li>
+						<em>Where from:</em>
+						<div>
+							{{singleActivityEvent.source}}
+						</div>
+		       		</li>
+		       		<li>
+						<em>Where to:</em>
+						<div>
+							{{singleActivityEvent.destination}}
+						</div>
+		       		</li>
+		       		<li>
+						<em>How many:</em>
+						<div>
+							{{singleActivityEvent.quantity}}
+						</div>
+		       		</li>
+				</ul>
+	       	</li>
+	    </ul>
+	</div>
+
+	<form class="input-append sidebarAutoCompleteRow" 
+		  ng-submit="submit()">
+		<input id="sidebarAutoComplete" 
+			   type="text" 
+			   data-msd-placeholder="Search for Log Events..." 
+			   data-ng-model="text">
+		<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu normalTop">
+		  ...
+		</ul>
+		<button type="submit" 
+				class="btn btn-mini autoCompletePlaciboButton">
+			<i class="icon-search"></i>
+		</button>
+	</form>
+</div>

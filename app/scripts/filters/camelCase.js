@@ -5,7 +5,7 @@ var app = angular.module('auxFeatures');
 app.filter('camelCase', function() {
 	  return function(input) {
 
-	    var newArr = input.split("-");
+	    var newArr = input.split(/-| /);
 
         for(var i = 0 ; i < newArr.length ; i++){
             newArr[i] = newArr[i].charAt(0).toUpperCase() 

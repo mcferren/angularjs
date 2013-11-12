@@ -1,16 +1,18 @@
 <ul class="sortLinks"
-    ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+    ng-class="{'phSkinny':matryoshkatemplate.sidebarState, 
+    		   'phFat':!matryoshkatemplate.sidebarState}">
 </ul>
 
 <div class="projectWrapper"
-     ng-class="{'phSkinny':sidebarState, 'phFat':!sidebarState}">
+     ng-class="{'phSkinny':matryoshkatemplate.sidebarState, 
+     			'phFat':!matryoshkatemplate.sidebarState}">
 </div>
 
 <div class="staticProjectCanvasAux" 
-     ng-class="{'skinny':sidebarState, 
-                'fat':!sidebarState, 
-                'spcShortAux':helpState, 
-                'spcTallAux':!helpState}"> 
+     ng-class="{'skinny':matryoshkatemplate.sidebarState, 
+                'fat':!matryoshkatemplate.sidebarState, 
+                'spcShortAux':matryoshkatemplate.helpState, 
+                'spcTallAux':!matryoshkatemplate.helpState}"> 
 		<div class="bottomBlank">
 		</div>
 		<div class="bottomFence">
@@ -22,24 +24,53 @@
 <div class="projectBody editEnclosure"> 
 	<!--nice-scrollbar infinite-scroll='loadingMore()' infinite-scroll-distance='10'-->
 	<form ng-submit="submit()">
-		<input id="projectTitle" 
-			   type="text" 
-			   data-msd-placeholder="Title" 
-			   data-ng-model="text">
 
-		<!-- MATT SAYS HOLD OFF ON META DATA FIELD FOR NOW
-		<input id="projectMeta" 
-			   type="text" 
-			   data-msd-placeholder="Meta Data" 
-			   data-ng-model="text">
-		-->
+		<div>
+			<input id="nodetitle"
+				   class="editInput editInputOdd" 
+				   type="text" 
+				   data-msd-placeholder="Title" 
+				   ng-model="matryoshkanodeidentity.name">
+		</div>
 
-		<textarea id="projectDescription" 
-				  type="text" 
-				  data-msd-placeholder="Desc" 
-				  data-ng-model="text"></textarea>
+		<div ng-repeat="field in matryoshkanodeidentity.attributes">
+			
+			<input ng-if="field.type !== 'select' && field.name !== 'description'"
+				   id="{{field.value}}"
+				   class="editInput" 
+				   ng-class="{'editInputOdd':$odd}"
+				   type="{{field.type}}" 
+				   data-msd-placeholder="{{field.label}}" 
+				   ng-model="field.value">
+
+			<select ng-if="field.type === 'select'"
+				   id="{{field.value}}"
+				   class="editInput" 
+				   ng-class="{'editInputOdd':$odd,
+							  'titleSelection':field.value === ''}"
+				   data-msd-placeholder="{{field.label}}" 
+				   ng-model="field.value">
+						<option value=""
+								ng-selected="field.value === ''">
+								{{field.label}}</option>
+						<option class="choices"
+								ng-repeat="selection in field.options"
+								value="{{selection}}"
+								ng-selected="field.value === selection">
+								{{selection}}</option>
+			</select>
+
+		</div>
+
+		<textarea ng-if="matryoshkanodeidentity.attributes[matryoshkanodeidentity.attributes.length - 1].name === 'description'"
+				  id="projectDescription" 
+				  data-msd-placeholder="{{matryoshkanodeidentity.attributes[matryoshkanodeidentity.attributes.length - 1].label}}" 
+				  ng-model="matryoshkanodeidentity.attributes[matryoshkanodeidentity.attributes.length - 1].value"></textarea>
+
 		<span>
-			<button class="btn btn-success" type="button">Submit Project</button>
+			<input type="submit" 
+				   class="btn btn-success" 
+				   value="Save {{matryoshkanodeidentity.type | camelCase}} Info">
 		</span>
 
 	</form>

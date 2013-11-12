@@ -1,0 +1,36 @@
+{
+  "id" : "20388ED8-ECDF-4326-BDB3-E3F50F0658DE",
+  "name" : "Instance Three",
+  "type" : "instance",
+  "reports" : [
+    {
+      "id" : "8sjd9sm3-m8ds-w90w-8dfs-1n0sd0nsd0i3",
+      "name" : "retention",
+      "label" : "Retention Policies",
+      "layout" : "table"
+    },{
+      "id" : "g89d4js0-n48s-0dms-2ms0-sjid80sd90sd",
+      "name" : "metadata",
+      "label" : "Metadata Templates",
+      "layout" : "table"
+    },{
+      "id" : "h8s0d8ds-v483-ksld-2m9s-9suds9udn0sn",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ],
+  "attributes" : [
+    {
+      "name" : "owner",
+      "label" : "Owner",
+      "type" : "text",
+      "value" : "Matt Taylor"
+    },{
+      "name" : "description",
+      "label" : "Description",
+      "type" : "textarea",
+      "value" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore"
+    }
+  ]
+}

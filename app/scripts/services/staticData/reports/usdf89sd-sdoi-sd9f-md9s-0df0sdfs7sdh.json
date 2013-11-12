@@ -1,0 +1,49 @@
+{
+  "id" : "usdf89sd-sdoi-sd9f-md9s-0df0sdfs7sdh",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "996332B1-A3A5-42A2-8D66-6D1EFC433724"
+  },
+  "columnNames" : {
+    "organization" : "Project Owner",
+    "jobtitle" : "Location",
+    "userid" : "User ID",
+    "usertype" : "User Type",
+    "location" : "Location",
+    "emailaddress" : "Email Address",
+    "phonenumber" : "Phone Number",
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "organization" : "NUMERIC",
+    "jobtitle" : "NUMERIC",
+    "userid" : "NUMERIC",
+    "usertype" : "NUMERIC",
+    "location" : "NUMERIC",
+    "emailaddress" : "NUMERIC",
+    "phonenumber" : "NUMERIC",
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "organization" : "organization.png",
+    "jobtitle" : "jobtitle.png",
+    "userid" : "userid.png",
+    "usertype" : "usertype.png",
+    "location" : "location.png",
+    "emailaddress" : "emailaddress.png",
+    "phonenumber" : "phonenumber.png",
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "organization" : "Chilly Firm USA",
+    "jobtitle" : "Big Boss",
+    "userid" : "A8342",
+    "usertype" : "Limited Admin User",
+    "location" : "Charlotte, NC USA",
+    "emailaddress" : "bjones@lawfirm.com",
+    "phonenumber" : "555-555-5555",
+    "description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore"
+    }
+  ]
+}

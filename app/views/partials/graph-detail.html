@@ -1,9 +1,7 @@
 <div id="g1">
-	<div class="graphHeader" ng-switch on="gid">
-		<h4 ng-switch-when="0">Line of Business Graph</h4>
-		<h4 ng-switch-when="1">Projects by Region Graph</h4>
-		<h4 ng-switch-when="2">Storage Saves Graph</h4>
-		<h4 ng-switch-when="3">System Status Graph</h4>
+	<div class="graphHeader">
+		<h4>{{transcendTitle}} {{transcendSBS}}</h4>
+		<input type="text" ng-model="transcendTitle">
 		<form class="form-search pull-right"
 	  		  ng-submit="submit()">
 			<div class="input-append">
@@ -16,10 +14,7 @@
 			</div>
 		</form>
 	</div>
-	<div class="graphBody" ng-switch on="gid">
-		<img ng-switch-when="0" src="/images/g0.png">
-		<img ng-switch-when="1" src="/images/g1.png">
-		<img ng-switch-when="2" src="/images/g2.png">
-		<img ng-switch-when="3" src="/images/g3.png">
+	<div class="graphBody">
+		<img ng-src="/images/g{{transcendGid}}.png">
 	</div>
 </div>

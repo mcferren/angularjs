@@ -33,5 +33,9 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/infobelt/orion2.git"
   }
 }

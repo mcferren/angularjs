@@ -1,15 +1,24 @@
 <nav class="navbar lockednav">
-  <div class="deco"> <!-- need this extra nest div so we can use padding to hide scrolling content-->
+  <div class="deco"> <!-- need this extra nest div so we can 
+                          use padding to hide  scrolling content-->
     <div class="navbar-inner"
          ng-cloak>
 
       <ul class="nav">
-        <li><a href="#/home/dashboard"><img src="/images/infobelt_head.png"></a></li>
-        <li ng-repeat="link in menuItems"><a ng-href="#/home/{{link}}">{{link | camelCase}}</a></li>
+        <li><a href="#/home/dashboard"
+               ng-click="clearActiveCanvasNodes()">
+                <img src="/images/infobelt_head.png"></a>
+        </li>
+        <li ng-repeat="link in menuItems">
+            <a ng-href="#/{{link}}"
+               ng-click="clearActiveCanvasNodes()">
+                  {{link | camelCase}}</a>
+        </li>
       </ul>
 
       <ul class="nav pull-right">
-        <li ng-repeat="link in sessionItems"><a ng-href="#/home/{{link}}">{{link}}</a></li>
+        <li><a ng-href="#">{{username}}</a></li>
+        <li><a ng-href="/logout">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -18,63 +27,70 @@
 <div class="row-fluid">
 
   <div class="topshelf" 
-       ng-class="{'skinny':sidebarState, 'fat':!sidebarState}" > 
+       ng-class="{'skinny':templateState.sidebarState, 
+                  'fat':!templateState.sidebarState}" > 
   </div> <!-- simply an underline to controlz-index -->
 
   <div class="content skinny" 
-       ng-class="{'skinny':sidebarState, 'fat':!sidebarState}"
-       ui-view="content" >
+       ng-class="{'skinny':templateState.sidebarState, 
+                  'fat':!templateState.sidebarState}">
+
+      <div class="canvasPot">
+        <div ng-repeat="node in activeCanvasNodes" ng-cloak>
+
+          <div node-detail 
+             ng-cloak 
+             identity="node"
+             templatestate="templateState">
+          </div>
+            
+        </div>
+      </div>
+
+      <div ui-view="sidebar" >
+      </div> 
+
   </div> 
 
   <div class="contentCanvas well" 
-       ng-class="{'skinny':sidebarState, 
-                  'fat':!sidebarState, 
-                  'ccTall':helpState, 
-                  'ccShort':!helpState}"> 
+     ng-class="{'skinny':templateState.sidebarState, 
+                'fat':!templateState.sidebarState, 
+                'ccTall':templateState.helpState, 
+                'ccShort':!templateState.helpState}"> 
   </div>  
 
-  <div class="contentMenu" 
-       ui-view="menu" >
-  </div> 
-
-  <div ng-class="{'skinny':sidebarState, 
-                  'fat':!sidebarState, 
-                  'bottomshelfTall':helpState, 
-                  'bottomshelfShort':!helpState}" > 
-  </div> <!-- simply an underline to controlz-index -->
-
   <div class="footerCanvas"
-       ng-class="{'skinny':sidebarState, 'fat':!sidebarState}" >
-      <div class="well"
-           ng-class="{'tall':helpState, 'short':!helpState}">
-      </div>
+     ng-class="{'skinny':templateState.sidebarState, 
+                'fat':!templateState.sidebarState}" >
+    <div class="well"
+         ng-class="{'tall':templateState.helpState, 
+                    'short':!templateState.helpState}">
+    </div>
   </div>
 
   <footer class="navbar"
-          ng-class="{'skinny':sidebarState, 'fat':!sidebarState} " >
+          ng-class="{'skinny':templateState.sidebarState, 
+                     'fat':!templateState.sidebarState} " >
         <ul class="nav">
-          <li ng-repeat="link in footerItems" ng-cloak><a ng-href="#/home/{{link}}">{{link}}</a></li>
+          <li ng-repeat="link in footerItems" ng-cloak>
+              <a ng-href="#/home/{{link}}">{{link}}</a>
+          </li>
           <li class="labeled">
-            <label for="helpClick" >Help:</label>
-            <input id="helpClick" type="checkbox" ng-model="helpState">
+            <label for="helpClick">Help:</label>
+            <input id="helpClick" 
+                   type="checkbox" 
+                   ng-model="templateState.helpState">
           </li>
         </ul>
 
         <ul class="nav pull-right">
           <li class="labeled">
             <label for="sideClick" >Activity Monitor:</label>
-            <input id="sideClick" type="checkbox" ng-model="sidebarState">
+            <input id="sideClick" 
+                   type="checkbox" 
+                   ng-model="templateState.sidebarState">
           </li>
         </ul>
   </footer> 
-
-  <div class="sidebar well" 
-       ng-show="sidebarState">
-  </div>
-
-  <div class="sidebarMenu" 
-       ui-view="sidebar"
-       ng-show="sidebarState">
-  </div> 
 
 </div>

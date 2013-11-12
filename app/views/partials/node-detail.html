@@ -1,0 +1,64 @@
+<div class="projectBlock">
+<!-- - - - - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - - - - -->
+<!-- <div class="projectBlock" ng-if="projectState.collapseIsClosed==false"> -->
+<!-- - - - - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - - - - -->
+	<div class="projectHeader"
+       	 ng-class="{'phSkinny':templatestate.sidebarState, 
+       	 			'phFat':!templatestate.sidebarState}">
+       	<!-- - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - -->
+		<!--<i ng-click="changeCollapseState()" class="icon-minus-sign"></i>
+		<h4 ng-click="changeCollapseState()">{{identity.title}}</h4>-->
+		<!-- - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - -->
+		<h4>{{identity.name}}</h4>
+
+		<ul class="nav nav-tabs pull-right" ng-cloak>
+			<li ng-class="{'active':nodeState.selection.name == 'edit'}">
+				<a ng-click="changeTab('edit',
+									   '',
+									   'edit')">Edit</a>
+			</li>
+			<li ng-repeat="tabHeader in identity.reports" 
+				ng-class="{'active':nodeState.selection.name == tabHeader.name}">
+				<a ng-href="#/{{headertype}}/{{nodeid}}/{{tabHeader.name}}"
+				   ng-click="changeTab(tabHeader.name,
+									   tabHeader.id,
+									   tabHeader.layout)">{{tabHeader.label}}</a>
+			</li>
+		</ul>
+	</div>
+
+	<div ng-repeat="tabBody in returnTabList">
+		<div ng-if="nodeState.selection.name == tabBody">
+			
+			<!--<div ng-class="{'details-tab':tabBody.layout == 'details-tab',
+							'table-tab':tabBody.layout == 'table-tab',
+							'edit-tab':tabBody.layout == 'edit-tab'}">-->
+
+			<div ng-if="nodeState.selection.layout === 'details'" 
+				 class="details-tab"
+				 matryoshkareportid="nodeState.selection.id"
+				 matryoshkatemplate="templatestate"></div> 
+
+			<div ng-if="nodeState.selection.layout === 'table'" 
+				 class="table-tab" 
+				 matryoshkareportid="nodeState.selection.id"
+				 matryoshkatemplate="templatestate"></div>
+
+			<div ng-if="nodeState.selection.layout === 'edit'" 
+				 class="edit-tab"
+				 matryoshkanodeidentity="identity"
+				 matryoshkatemplate="templatestate"></div>
+		</div>
+	</div>
+</div>
+
+<!-- - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - - - -
+<div class="projectBlock" ng-if="projectState.collapseIsClosed==true">
+	<div class="projectHeader"
+       	 ng-class="{'phSkinny':templatestate.sidebarState, 
+       	 			'phFat':!templatestate.sidebarState}">
+		<i ng-click="changeCollapseState()" class="icon-plus-sign"></i>
+		<h4 ng-click="changeCollapseState()">{{identity.title}}</h4>
+	</div>
+</div>
+- - - - - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - -->

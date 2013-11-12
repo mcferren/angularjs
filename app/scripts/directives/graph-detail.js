@@ -6,8 +6,12 @@ app.directive('graphDetail', function () {
     return {
       restrict: 'A',
       replace: false,
-      transclude: true,
-      scope: { gid:'@graphid' },
+      scope: { 
+            transcendGid:'@graphidentifier',
+            transcendTitle: '=gname',
+            transcendSBS: '=sbs',
+            transcendHelp: '=helps'
+      },
       controller: function($scope) {
           
           //$scope.graphTypes = ['lineofbiz', 'projectsbyregion', 'storagesaves', 'systemstatus'];
