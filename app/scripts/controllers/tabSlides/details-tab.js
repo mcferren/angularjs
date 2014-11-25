@@ -2,11 +2,11 @@
 
 var app = angular.module('myapp');
 
-app.controller('detailsTabCtrl', ['$scope', 'staticapi',
-    function ($scope, staticapi) {
+app.controller('detailsTabCtrl', ['$scope', 'staticapi', '$sce',
+    function ($scope, staticapi, $sce) {
 
         var getTabByID = function() {
-          staticapi.get("reports/" + $scope.matryoshkareportid).
+          staticapi.get("tabs/" + $scope.matryoshkanode.selection.id).
           success(function(data, status, headers, config) {
 
             var returnFieldList= [];
@@ -21,6 +21,8 @@ app.controller('detailsTabCtrl', ['$scope', 'staticapi',
             }
 
             $scope.rowsbycolumn = returnFieldList;
+
+            $scope.descriptioncontent = $sce.trustAsHtml(data.rows[0]['description']);
 
           }).
           error(function(data, status, headers, config) {

@@ -1,0 +1,49 @@
+{
+  "id" : "22222222-A3A5-42A2-8D66-6D1EFC433724",
+  "name" : "Kurt Freytag",
+  "type" : "person",
+  "height" : "super",
+  "tabs" : [
+    {
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "investments",
+      "label" : "Investments",
+      "layout" : "table"
+    },{
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "news",
+      "label" : "News",
+      "layout" : "table"
+    },{
+      "id" : "wioelsow-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "twitter",
+      "label" : "Twitter",
+      "layout" : "details"
+    },{
+      "id" : "bhsu89wi-0s0d-6dsf-09ds-09df0gd09duf",
+      "name" : "events",
+      "label" : "Events",
+      "layout" : "details"
+    },{
+      "id" : "md09s0sd-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "products",
+      "label" : "Advisor",
+      "layout" : "table"
+    },{
+      "id" : "dyuw9skw-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "education",
+      "label" : "Education",
+      "layout" : "details"
+    },{
+      "id" : "twyuow3j-87fv-0dfs-d9f0-67sdtnfns78f",
+      "name" : "experience",
+      "label" : "Experience",
+      "layout" : "details"
+    },{
+      "id" : "ow9ree0w-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

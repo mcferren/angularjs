@@ -1,0 +1,45 @@
+{
+  "id" : "7733hhaa-87fv-0dfs-d9f0-67sdtnfns78f",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "3D0935BF-9F0C-4401-92D8-AFB761FE51F1"
+  },
+  "columnNames" : {
+    "projectowner" : "Project Owner",
+    "location" : "Location",
+    "orioninstance" : "Instance",
+    "datecreated" : "Date Created",
+    "projectsize" : "Project Size",
+    "drinstance" : "DR Instance",
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "projectowner" : "NUMERIC",
+    "location" : "NUMERIC",
+    "orioninstance" : "NUMERIC",
+    "datecreated" : "DATE",
+    "projectsize" : "NUMERIC",
+    "drinstance" : "DATE",
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "projectowner" : "owner.png",
+    "location" : "location.png",
+    "orioninstance" : "orioninstance.png",
+    "datecreated" : "datecreated.png",
+    "projectsize" : "projectsize.png",
+    "drinstance" : "drinstance.png",
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "projectowner" : "Moot Taylor",
+    "location" : "Charlotte, NC USA",
+    "orioninstance" : "O2038-FR",
+    "datecreated" : "66567890124567",
+    "projectsize" : "445GB",
+    "drinstance" : "DR Instance",
+    "description" : "<div'><img style='border: 0px;' src='/images/screenshots/location_events.png' width='100%'></iframe></div>"
+    }
+  ]
+}

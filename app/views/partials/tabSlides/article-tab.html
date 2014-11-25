@@ -1,0 +1,60 @@
+<ul class="sortLinks"
+    ng-class="{'phSkinny':matryoshkatemplate.sidebarState, 
+    		   'phFat':!matryoshkatemplate.sidebarState}">
+</ul>
+
+
+<div class="staticProjectCanvas tableFence" 
+     ng-class="{'gutterskinny':matryoshkatemplate.sidebarState, 
+                'gutterfat':!matryoshkatemplate.sidebarState}"> 
+
+      <form class="input-append projectSearchRow dropup white"
+            ng-class="{'birTall':matryoshkatemplate.helpState, 
+                       'birShort':!matryoshkatemplate.helpState}"
+            ng-submit="submit()">
+
+              <input id="projectSearch" 
+                     type="text" 
+                     data-msd-placeholder="Search..." 
+                     data-ng-model="text">
+              <div class="projectSearchDropUp"
+                   ng-mouseenter="dropUpHover = true" 
+                   ng-mouseleave="dropUpHover = false">
+                      <span class="caret"></span>
+              </div>
+              <div class="projectSearchToolSeparator">
+                  <span></span>
+              </div>
+              <!-- NEED TO RETURN HERE AND REPLACE THIS WITH A UL / LI-LI-LI-LI -->
+              <div class="nodeGutterTool searchplacibo"
+                   ng-mouseenter="placiboSearchHover = true" 
+                   ng-mouseleave="placiboSearchHover = false">
+                      <i class="icon-search"
+                            ng-class="{'':placiboSearchHover, 'icon-white':!placiboSearchHover}">
+                      </i>
+              </div>
+              <div class="projectSearchToolSeparator">
+                  <span></span>
+              </div>
+              <div class="nodeGutterTool facebook social"></div>
+      </form>
+              <!--
+              <ul class="dropdown-menu"
+                    ng-class="{'menuShort':matryoshkatemplate.helpState, 
+                               'menuTall':!matryoshkatemplate.helpState}">
+                ...
+              </ul>
+              -->
+
+
+      <div class="bottomProjectRow">
+          <div class="projectAuxCreateButton">
+            <a href="/">{{tabDataObject.parameters.buttontext}}</a>
+            <i ng-class="tabDataObject.parameters.buttonicon"></i>
+          </div>
+      </div>
+</div>  
+
+<div class="projectBody"> 
+
+</div>

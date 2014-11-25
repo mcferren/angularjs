@@ -1,0 +1,19 @@
+{
+  "id" : "13131313-A3A5-42A2-8D66-6D1EFC433724",
+  "name" : "Andreessen Horowitz",
+  "type" : "investor",
+  "height" : "mini",
+  "tabs" : [
+    {
+      "id" : "9s0dm3d0-3b8a-0sdm-2jhs-7a8snsd903ks",
+      "name" : "news",
+      "label" : "News",
+      "layout" : "table"
+    },{
+      "id" : "4gsci9os-s0d9-jkd7-2ns8-98sd8k3m9suj",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

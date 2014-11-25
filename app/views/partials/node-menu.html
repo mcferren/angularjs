@@ -12,7 +12,7 @@
 </div>  
 
 <div class="contentMenu">
-	<h3 green-man nodetype="{{headertype | camelCase}}"></h3>
+	<h3 green-man nodetype="{{menuHeaderLabel | camelCase}}"></h3>
 
 	<div class="contentMenuControls cmcDecorationsNormal normalTop" 
 	     ng-class="{'cmcTall':templateState.helpState, 
@@ -26,8 +26,8 @@
 			    ng-mouseenter="nodeToolsShow = true" 
 			    ng-mouseleave="nodeToolsShow = false"
 			    ng-cloak>
+
 			    <div class="leftTool">
-					<!--
 					<i class="icon-star"
 					   ng-show="nodeToolsShow"
 					   ng-if="node.isFavorite==true"
@@ -36,22 +36,24 @@
 					   ng-show="nodeToolsShow"
 					   ng-if="node.isFavorite==false"
 					   ng-click="node.isFavorite = true"></i>
-					-->
-					<i class="icon-star-empty"
-					   ng-show="nodeToolsShow"></i>
 				</div>
+
 			    <span ng-class="{'lastListItem':$last}">
-			    	<a ng-href="#/{{headertype}}/{{node.id}}"> 
-			    	<!--target="p{{node.serialNumber}}" -->
-					   	{{node.name}}
-					</a>
+			    	<a href=""
+			    	   ng-click="pushNewCurrentNode(node.id)">
+			    	   {{node.name}}<!-- {{node.iconcoordinates}} -->
+			    	</a>
 				</span>
-			    
-				<div class="rightTool">
+					   
+			    <div class="rightTool">
+			    	<i ng-if="node.iconcoordinates"
+			    	   ng-show="nodeToolsShow"
+				       ng-style="{'background-position': node.iconcoordinates}"></i>
 				</div>
 			</li>
 
-			<!--
+			<!-- // INFINITE SCROLL //
+			
 			<li ng-repeat="image in images"
 			    ng-mouseenter="nodeToolsShow = true" 
 			    ng-mouseleave="nodeToolsShow = false"
@@ -81,11 +83,12 @@
 		</ul>
 	</div>
 
-	<form class="input-append projectAutoCompleteRow" 
+	<form class="input-append sidebarinput si-top" 
 		  ng-submit="submit()">
-		<input id="projectAutoComplete" 
+		<input id="nodeAutoCompleteTop" 
+			   class="autoComplete"
 			   type="text" 
-			   data-msd-placeholder="Search for {{nodeSearchLabel | camelCase}}..." 
+			   data-msd-placeholder="Search {{menuSearchLabel}}..." 
 			   data-ng-model="text">
 		<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
 			<span class="caret"></span>
@@ -95,17 +98,38 @@
 		  ...
 		</ul>
 		<button type="submit" 
-				class="btn btn-mini autoCompletePlaciboButton">
+				class="btn btn-mini autoCompletePlaciboButtonTop">
 			<i class="icon-search"></i>
 		</button>
 	</form>
 
-	<form class="bottomButtonRow dropup"
+<!-- 	<form class="bottomButtonRow dropup"
 	      ng-class="{'bbrTall':templateState.helpState, 'bbrShort':!templateState.helpState}">
 		<button type="submit" 
 				class="btn btn-mini" 
 				id="createUserPlus">
-			Create New {{nodeButtonLabel | camelCase}}
+			Create New {{menuButtonLabel | camelCase}}
+			<i class="icon-plus"></i>
+		</button>
+	</form> -->
+
+	<form class="input-append sidebarinput si-bottom dropup black" 
+		  ng-submit="submit()"
+		  ng-class="{'bbrTall':templateState.helpState, 'bbrShort':!templateState.helpState}">
+		<input id="nodeAutoCompleteBottom" 
+			   class="autoComplete"
+			   type="text" 
+			   data-msd-placeholder="Create a New Folder..." 
+			   data-ng-model="text">
+<!-- 		<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
+			<span class="caret"></span>
+		</button> -->
+		<ul class="dropdown-menu normalTop"
+	      	ng-class="{'menuShort':templateState.helpState, 'menuTall':!templateState.helpState}">
+		  ...
+		</ul>
+		<button type="submit" 
+				class="btn btn-mini autoCompletePlaciboButtonBottom">
 			<i class="icon-plus"></i>
 		</button>
 	</form>

@@ -1,0 +1,224 @@
+{
+   "page":0,
+   "pageSize":0,
+   "totalResults":0,
+   "results":[
+		 {
+			"title":"companies",
+			"spotlight": true,
+			"node":null,
+			"menu":"companies",
+			"menuheader":"Companies",
+			"menusearch":"for Companies",
+			"menubutton":"company"
+		},  {
+			"title":"people",
+			"spotlight": true,
+			"node":null,
+			"menu":"people",
+			"menuheader":"People",
+			"menusearch":"for People",
+			"menubutton":"person"
+		},  {
+			"title":"products",
+			"spotlight": true,
+			"node":null,
+			"menu":"produtcs",
+			"menuheader":"Products",
+			"menusearch":"for Products",
+			"menubutton":"product"
+		},  {
+			"title":"events",
+			"spotlight": true,
+			"node":null,
+			"menu":"events",
+			"menuheader":"Events",
+			"menusearch":"for Events",
+			"menubutton":"event"
+		},  {
+			"title":"schools",
+			"spotlight": true,
+			"node":null,
+			"menu":"schools",
+			"menuheader":"Schools",
+			"menusearch":"for Schools",
+			"menubutton":"school"
+		},  {
+			"title":"government",
+			"spotlight": true,
+			"node":null,
+			"menu":"government",
+			"menuheader":"Government",
+			"menusearch":"amongst Govt.",
+			"menubutton":"govt agency"
+		},  {
+			"title":"investors",
+			"spotlight": true,
+			"node":"PPPP1919-AMKS-1293-WM8S-USIIEKSLSPE8",
+			"menu":"investors",
+			"menuheader":"Investors",
+			"menusearch":"for Investors",
+			"menubutton":"investor page"
+		},  {
+			"title":"locations",
+			"spotlight": true,
+			"node":"10101010-A3A5-42A2-8D66-6D1EFC433724",
+			"menu":"locations",
+			"menuheader":"Locations",
+			"menusearch":"for locations",
+			"menubutton":"related page"
+		},  {
+			"title":"san francisco",
+			"spotlight": null,
+			"node":"10101010-A3A5-42A2-8D66-6D1EFC433724",
+			"menu":"related",
+			"menuheader":"San Francisco",
+			"menusearch":"amongst SF",
+			"menubutton":"related page"
+		},  {
+			"title":"celebrity investors",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Celebrity Investors",
+			"menusearch":"info about Celebs",
+			"menubutton":"related page"
+		},  {
+			"title":"carmelo anthony",
+			"spotlight": null,
+			"node":"22222222-A3A5-42A2-8D66-6D1EFC433724",
+			"menu":"related",
+			"menuheader":"Carmelo Anthony",
+			"menusearch":"info about Carmelo",
+			"menubutton":"related page"
+		},  {
+			"title":"internet of things",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Internet of Things",
+			"menusearch":"info about IOT",
+			"menubutton":"related page"
+		},  {
+			"title":"arduino",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Arduino",
+			"menusearch":"info about Arduino",
+			"menubutton":"related page"
+		},  {
+			"title":"incubators",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Incubators",
+			"menusearch":"for Incubators",
+			"menubutton":"related page"
+		},  {
+			"title":"top ten list",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Top Ten List",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"eirmod tempor",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Eirmod Tempor",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"dolore magna",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Dolore Magna",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"aliquyam erat",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Aliquyam Erat",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"diam voluptua",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Diam Voluptua",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"clitakasd gubergren",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Clitakasd Gubergren",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"seddiam voluptua",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Seddiam Voluptua",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"veroeoset accusam",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Veroeoset Accusam",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"etjustoduo dolores",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Etjustoduo Dolores",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"nosea takimata",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Nosea Takimata",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"sanctus estorem",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Sanctus Estorem",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"ipsumdolor sitamet",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Ipsumdolor Sitamet",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		},  {
+			"title":"consetetur sadipscing",
+			"spotlight": null,
+			"node":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Consetetur Sadipscing",
+			"menusearch":"related pages",
+			"menubutton":"related page"
+		}
+	]
+}

@@ -7,7 +7,7 @@ app.controller('tableTabCtrl', ['$scope', 'staticapi', '$log',
 
 
           $scope.getTabByID = function() {
-            staticapi.get("reports/" + $scope.matryoshkareportid).
+            staticapi.get("tabs/" + $scope.matryoshkanode.selection.id).
             success(function(data, status, headers, config) {
 
                 $scope.returnFieldList = [];

@@ -15,109 +15,122 @@
 <div class="sidebarMenu" 
    ng-show="templateState.sidebarState">
 
-	<h3 green-man>Activity Monitor</h3>
+	<h3 green-man>Active Information</h3>
 
 	<div class="sidebarControls normalTop" nice-scrollbar>
 		<ul class="sidebarContentSelections">
 		<!--<ul class="sidebarContentSelections"> --><!--infinite-scroll='loadMore()' infinite-scroll-distance='10'-->
-			<li ng-repeat="singleActivityEvent in activityLogList"
-	       		ng-switch on="singleActivityEvent.category"
-	       		ng-class="{'openedActivityEvent':singleActivityEvent.isOpened, 
-	       				   '':!singleActivityEvent.isOpened}"
+			<li ng-repeat="contentNode in activeInfoList"
+	       		ng-switch on="contentNode.category"
+	       		ng-class="{'openedActivityEvent':contentNode.isOpened, 
+	       				   '':!contentNode.isOpened}"
 			    ng-mouseenter="activityToolsShow = true" 
 			    ng-mouseleave="activityToolsShow = false"
 			    ng-cloak>
 
 			    <div class="leftTool">
 					<button type="button" 
-					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-							class="btn btn-success sidebarButton createButton"
-							ng-switch-when="create">
-								<i class="icon-white icon-plus-sign"></i>
+					 		ng-click="contentNode.isOpened = !contentNode.isOpened"
+							class="btn btn-success sidebarButton articleButton"
+							ng-switch-when="article"
+							ng-show="activityToolsShow">
+								<i class="icon-white icon-comment"></i>
 					</button>
 					<button type="button" 
-					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-							class="btn btn-success sidebarButton completeButton"
-							ng-switch-when="complete">
-								<i class="icon-white icon-ok-sign"></i>
+					 		ng-click="contentNode.isOpened = !contentNode.isOpened"
+							class="btn btn-success sidebarButton animationButton"
+							ng-switch-when="animation"
+							ng-show="activityToolsShow">
+								<i class="icon-white icon-play"></i>
 					</button>
 					<button type="button" 
-					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-							class="btn btn-success sidebarButton ingestButton"
-							ng-switch-when="ingest">
-								<i class="icon-white icon-circle-arrow-up"></i>
+					 		ng-click="contentNode.isOpened = !contentNode.isOpened"
+							class="btn btn-success sidebarButton graphButton"
+							ng-switch-when="graph"
+							ng-show="activityToolsShow">
+								<i class="icon-white icon-signal"></i>
 					</button>
 					<button type="button" 
-					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-							class="btn btn-success sidebarButton searchButton"
-							ng-switch-when="search">
-								<i class="icon-white icon-search"></i>
+					 		ng-click="contentNode.isOpened = !contentNode.isOpened"
+							class="btn btn-success sidebarButton acquisitionButton"
+							ng-switch-when="acquisition"
+							ng-show="activityToolsShow">
+								<i class="icon-white icon-stop"></i>
 					</button>
 					<button type="button" 
-					 		ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened"
-							class="btn btn-danger sidebarButton issueButton"
-							ng-switch-when="issue">
-								<i class="icon-white icon-exclamation-sign"></i>
+					 		ng-click="contentNode.isOpened = !contentNode.isOpened"
+							class="btn btn-success sidebarButton fundingRoundButton"
+							ng-switch-when="fundinground"
+							ng-show="activityToolsShow">
+								<i class="icon-white icon-fire"></i>
 					</button>
 				</div>
 
-				<span ng-class="{'lastListItem':$last}">
-		       		<a href="" ng-click="singleActivityEvent.isOpened = !singleActivityEvent.isOpened">
-							{{singleActivityEvent.title}}
+				<span ng-if="contentNode.isOpened==true"
+					  ng-class="{'lastListItem':$last}">
+		       		<a ng-click="contentNode.isOpened = !contentNode.isOpened">
+							{{contentNode.title}}
+					</a>
+				</span>
+				<span ng-if="contentNode.isOpened==false"
+					  ng-class="{'lastListItem':$last}">
+		       		<a ng-click="contentNode.isOpened = !contentNode.isOpened;
+		       					 pushNewCurrentNode(contentNode.id)">
+							{{contentNode.title}}
 					</a>
 				</span>
 
 				<div class="rightTool">
 					<i class="icon-star"
 					   ng-show="activityToolsShow"
-					   ng-if="singleActivityEvent.isFavorite==true"
-					   ng-click="singleActivityEvent.isFavorite = false"></i>
+					   ng-if="contentNode.isFavorite==true"
+					   ng-click="contentNode.isFavorite = false"></i>
 					<i class="icon-star-empty"
 					   ng-show="activityToolsShow"
-					   ng-if="singleActivityEvent.isFavorite==false"
-					   ng-click="singleActivityEvent.isFavorite = true"></i>
+					   ng-if="contentNode.isFavorite==false"
+					   ng-click="contentNode.isFavorite = true"></i>
 				</div>
 
-				<ul ng-if="singleActivityEvent.isOpened==true">
-					<li>
+				<ul ng-if="contentNode.isOpened==true">
+		       		<li>
 						<em>Who:</em>
 						<div>
-							{{singleActivityEvent.user}}
+							{{contentNode.teaser.user}}
 						</div>
 					</li>
 		       		<li>
 						<em>What:</em>
 						<div>
-							<a href="" 
+							{{contentNode.teaser.serialNumber}}
+							<!-- <a href=""      THIS DIRECTIVE HELPS PROVIDE LINKS IN THIS LITTLE BOX
 							   project-link
-							   projectid="{{singleActivityEvent.serialNumber}}"
+							   projectid="{{contentNode.teaser.serialNumber}}"
 							   offset="116">
-							   		{{singleActivityEvent.projectName}}
-							</a>
+							</a> -->
 						</div>
 		       		</li>
 		       		<li>
 						<em>When:</em>
 						<div>
-							{{singleActivityEvent.timestamp | date:'MMM dd yyyy hh:mm a'}}
+							{{contentNode.teaser.timestamp | date:'MMM dd yyyy hh:mm a'}}
 						</div>
 		       		</li>
 		       		<li>
 						<em>Where from:</em>
 						<div>
-							{{singleActivityEvent.source}}
+							{{contentNode.teaser.source}}
 						</div>
 		       		</li>
 		       		<li>
 						<em>Where to:</em>
 						<div>
-							{{singleActivityEvent.destination}}
+							{{contentNode.teaser.destination}}
 						</div>
 		       		</li>
 		       		<li>
 						<em>How many:</em>
 						<div>
-							{{singleActivityEvent.quantity}}
+							{{contentNode.teaser.quantity}}
 						</div>
 		       		</li>
 				</ul>
@@ -128,17 +141,19 @@
 	<form class="input-append sidebarAutoCompleteRow" 
 		  ng-submit="submit()">
 		<input id="sidebarAutoComplete" 
+			   class="autoComplete"
 			   type="text" 
-			   data-msd-placeholder="Search for Log Events..." 
+			   data-msd-placeholder="Search Articles & Graphs..." 
 			   data-ng-model="text">
 		<button class="btn dropdown-toggle btn-mini" data-toggle="dropdown">
-			<span class="caret"></span>
+			<!-- <span class="caret"></span> -->
+			<i class="icon-user"></i>
 		</button>
 		<ul class="dropdown-menu normalTop">
 		  ...
 		</ul>
 		<button type="submit" 
-				class="btn btn-mini autoCompletePlaciboButton">
+				class="btn btn-mini autoCompletePlaciboButtonTop">
 			<i class="icon-search"></i>
 		</button>
 	</form>

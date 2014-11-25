@@ -1,0 +1,21 @@
+{
+  "id" : "uiwokslw-s0d9-jkd7-2ns8-98sd8k3m9suj",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "38383838-QIOE-92J3-N3KS-8S9DVEBS02NE"
+  },
+  "columnNames" : {
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "description" : "<iframe src='//player.vimeo.com/video/77553839?byline=0&amp;portrait=0&amp;autoplay=1&amp;&defaultVolume=0' width='100%' height='480' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+    }
+  ]
+}

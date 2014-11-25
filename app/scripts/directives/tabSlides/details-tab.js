@@ -7,7 +7,7 @@ app.directive('detailsTab', function () {
       restrict: 'C',
       replace: false,
       scope: {
-            matryoshkareportid: '=',
+            matryoshkanode: '=',
             matryoshkatemplate: '='
       },
       controller: 'detailsTabCtrl',

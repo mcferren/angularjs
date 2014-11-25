@@ -1,0 +1,33 @@
+{
+  "id" : "uS8s9d30-2cf9-4378-8c1d-a18ea9a1e664",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "996332B1-A3A5-42A2-8D66-6D1EFC433724"
+  },
+  "columnNames" : {
+    "type" : "Type",
+    "path" : "Path",
+    "size" : "Size",
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "type" : "NUMERIC",
+    "path" : "NUMERIC",
+    "size" : "NUMERIC",
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "type" : "0.png",
+    "path" : "1.png",
+    "size" : "2.png",
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "type" : "Big Box",
+    "path" : "198.473.283/abc/efg/higk/lmnop",
+    "size" : "5445GB",
+    "description" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    }
+  ]
+}

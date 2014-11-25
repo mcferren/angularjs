@@ -1,0 +1,256 @@
+{
+   "page":0,
+   "pageSize":0,
+   "totalResults":0,
+   "results":[
+      {
+         "id":"2222222a-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"2222222a-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Facebook",
+         "nodetype":"company",
+         "active":true,
+         "isFavorite":true,
+         "iconcoordinates":"-14px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":true,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"23232323-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"23232323-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Apple",
+         "nodetype":"company",
+         "active":true,
+         "isFavorite":true,
+         "iconcoordinates":"3px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"19191919-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"19191919-A3A5-42A2-8D66-6D1EFC433724",
+            "name":"Skye"
+         },
+         "name":"TechCrunch Disrupt London",
+         "nodetype":"event",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"20202020-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"20202020-9F0C-4401-92D8-AFB761FE51F1",
+            "name":"Skye"
+         },
+         "name":"GraphConnect 2014",
+         "nodetype":"event",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"14141414-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"14141414-9F0C-4401-92D8-AFB761FE51F1",
+            "name":"Skye"
+         },
+         "name":"Goldman Sachs",
+         "nodetype":"investor",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"24242424-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"24242424-9F0C-4401-92D8-AFB761FE51F1",
+            "name":"Skye"
+         },
+         "name":"Google",
+         "nodetype":"company",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-32px 0px"
+      },
+      {
+         "id":"15151515-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"15151515-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Horizons Ventures",
+         "nodetype":"investor",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"10101010-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"10101010-A3A5-42A2-8D66-6D1EFC433724",
+            "name":"Skye"
+         },
+         "name":"San Francisco",
+         "nodetype":"location",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"2222222a-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"2222222a-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Facebook",
+         "nodetype":"company",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-14px 0px"
+      },
+      {
+         "id":"66666666-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"iPhone 6",
+         "nodetype":"product",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"13131313-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"13131313-A3A5-42A2-8D66-6D1EFC433724",
+            "name":"Skye"
+         },
+         "name":"Andreessen Horowitz",
+         "nodetype":"investor",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"21212121-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"21212121-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Graph Databases Meetup",
+         "nodetype":"event",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"22222222-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"22222222-A3A5-42A2-8D66-6D1EFC433724",
+            "name":"Skye"
+         },
+         "name":"Kurt Freytag",
+         "nodetype":"person",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"11111111-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"11111111-9F0C-4401-92D8-AFB761FE51F1",
+            "name":"Skye"
+         },
+         "name":"Dave Quintana",
+         "nodetype":"person",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"00000000-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"00000000-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Vineet Thanedar",
+         "nodetype":"person",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"12121212-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"12121212-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Chicago",
+         "nodetype":"location",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"55555555-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"55555555-9F0C-4401-92D8-AFB761FE51F1",
+            "name":"Skye"
+         },
+         "name":"Galaxy 5",
+         "nodetype":"product",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"44444444-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"44444444-ECDF-4326-BDB3-E3F50F0658DE",
+            "name":"Skye"
+         },
+         "name":"Beats Studio",
+         "nodetype":"product",
+         "active":true,
+         "isFavorite":false
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"1111111a-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"1111111a-9F0C-4401-92D8-AFB761FE51F1",
+            "name":"Skye"
+         },
+         "name":"Miami",
+         "nodetype":"location",
+         "active":true,
+         "isFavorite":false
+      }
+   ]
+}

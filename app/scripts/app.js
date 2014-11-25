@@ -8,9 +8,11 @@ var app = angular.module('myapp', ['ui.state',
 
 angular.module('auxFeatures', []);
 
+app.value('$anchorScroll', angular.noop);
+
 app.config(function($stateProvider, $urlRouterProvider){
   
-  $urlRouterProvider.otherwise('/dashboard');
+  $urlRouterProvider.otherwise('/following');
  
   $stateProvider
       .state('template', {
@@ -32,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider){
   })
   .state('nodemenu', {
     parent: 'sidebar',
-    url: '/{headertype:dashboard|ingestion|explore|governance|users|storage}',
+    url: '/{menutype:following|related|companies|people|products|events|schools|government|investors|locations}',
     views: {
       "menu": {
         templateUrl: '/views/partials/node-menu.html',
@@ -43,48 +45,32 @@ app.config(function($stateProvider, $urlRouterProvider){
 
         $rootScope.currentTabType = null;
         $rootScope.currentNodeID = null;
-        $rootScope.currentHeaderType = $stateParams.headertype;
+        $rootScope.currentMenuType = $stateParams.menutype;
+        
+    }
+  })
+  .state('nakednode', {
+    parent: 'sidebar',
+    url: '/:nodeid',
+    views: {
+      "menu": {
+        templateUrl: '/views/partials/node-menu.html',
+        controller: 'node-menuCtrl'
+      }
+    },
+    onEnter: function($rootScope, $stateParams){
 
-        switch ($stateParams.headertype)
-        {
-          case 'dashboard': 
-                    $rootScope.currentNodeType = 'graphic';
-                    break;
-          case 'ingestion': 
-                    $rootScope.currentNodeType = 'project';
-                    break;
-          case 'governance': 
-                    $rootScope.currentNodeType = 'instance';
-                    break;
-          case 'users': 
-                    $rootScope.currentNodeType = 'user';
-                    break;
-          case 'storage': 
-                    $rootScope.currentNodeType = 'storage';
-                    break;
-          default:  $rootScope.currentNodeType = null
-        }
-
-        // these logs are to help debug templateCtrl $rootScope $watch bug
-        console.log('MENU currentHeaderType: ', $rootScope.currentHeaderType);
-        console.log('MENU currentNodeType: ', $rootScope.currentNodeType);
-        console.log('MENU currentNodeID: ', $rootScope.currentNodeID);
-        console.log('MENU currentTabType: ', $rootScope.currentTabType);
+        $rootScope.currentTabType = null;
+        $rootScope.currentNodeID = $stateParams.nodeid;
+        $rootScope.currentMenuType = 'related';
     }
   })
   .state('singlenode', {
     parent: 'nodemenu',
     url: '/:nodeid',
     onEnter: function($rootScope, $stateParams){
-
         $rootScope.currentTabType = null;
         $rootScope.currentNodeID = $stateParams.nodeid;
-
-        // these logs are to help debug templateCtrl $rootScope $watch bug
-        console.log('NODE currentHeaderType: ', $rootScope.currentHeaderType);
-        console.log('NODE currentNodeID: ', $rootScope.currentNodeID);
-        console.log('NODE currentNodeType: ', $rootScope.currentNodeType);
-        console.log('NODE currentTabType: ', $rootScope.currentTabType);
 
     }
   })
@@ -95,11 +81,14 @@ app.config(function($stateProvider, $urlRouterProvider){
 
         $rootScope.currentTabType = $stateParams.tabtype;
 
-        // these logs are to help debug templateCtrl $rootScope $watch bug
-        console.log('TAB currentHeaderType: ', $rootScope.currentHeaderType);
-        console.log('TAB currentNodeID: ', $rootScope.currentNodeID);
-        console.log('TAB currentNodeType: ', $rootScope.currentNodeType);
-        console.log('TAB currentTabType: ', $rootScope.currentTabType);
+    }
+  })
+  .state('nakedtab', {
+    parent: 'nakednode',
+    url: '/:tabtype',
+    onEnter: function($rootScope, $stateParams){
+
+        $rootScope.currentTabType = $stateParams.tabtype;
 
     }
   });

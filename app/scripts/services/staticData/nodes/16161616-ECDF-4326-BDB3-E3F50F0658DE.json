@@ -1,0 +1,34 @@
+{
+  "id" : "16161616-ECDF-4326-BDB3-E3F50F0658DE",
+  "name" : "Savannah River Site",
+  "type" : "government",
+  "height" : "super",
+  "tabs" : [
+    {
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "news",
+      "label" : "News",
+      "layout" : "table"
+    },{
+      "id" : "ns9df9sw-0s0d-6dsf-09ds-09df0gd09duf",
+      "name" : "advisors",
+      "label" : "Advisors",
+      "layout" : "table"
+    },{
+      "id" : "md09s0sd-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "faculty",
+      "label" : "Faculty",
+      "layout" : "table"
+    },{
+      "id" : "wpe9w045m-87fv-0dfs-d9f0-67sdtnfns78f",
+      "name" : "alumni",
+      "label" : "Alumni",
+      "layout" : "table"
+    },{
+      "id" : "leopsldp-nske-38ss-m9ss-ja9skw0pslwks",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}
