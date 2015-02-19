@@ -1,0 +1,390 @@
+/**************************************************************
+**************************************************************
+******************* BENJAMIN MCFERREN ************************
+***************** CRUNCHBASE INTERVIEW ***********************
+********************* 10 / 25 / 2014 *************************
+************ mcferren@seasidesyndication.com *****************
+**************************************************************
+**************************************************************/
+
+body {
+background-color:#E9E9E9;
+margin:0 auto;
+font-weight: 300;
+font-family: 'Open Sans', sans-serif;
+}
+
+em {
+color:#2292A7;
+font-style:normal;
+}
+
+figure {
+position:fixed;
+margin:0;
+background-image: url('../images/square_pattern.png');
+background-repeat: no-repeat;
+background-position: center top;
+top:53px;
+right:0;
+left:0;
+bottom:0;
+z-index: -1;
+}
+
+
+
+/**************************************************************
+**************************************************************
+******************* SECTION FOR HEADER ***********************
+**************************************************************
+**************************************************************/
+
+
+header {
+background-color:#333;
+text-align:center;
+position:fixed;
+top:0px;
+width:100%;
+height:33px;
+padding:10px 0;
+overflow:hidden;
+border-bottom:1px solid #DFDFDF;
+-webkit-box-shadow: 0px 1px 5px 0px #7d7d7d;
+-moz-box-shadow: 0px 1px 5px 0px #7d7d7d;
+box-shadow: 0px 1px 5px 0px #7d7d7d;
+z-index:3;
+}
+
+header div, header ul {
+display:inline-block;
+text-align:left;
+margin-bottom: 20px;
+}
+
+header img {
+margin-top:6px;
+}
+
+#controls a:first-child {
+margin-right:30px;
+}
+
+#search {
+width: 51%;
+margin-right: 16%;
+text-align:right;
+position:relative;
+top:-5px;
+}
+
+#search input {
+width:79%;
+border:1px solid #DFDFDF;
+padding:7px 26px 7px 7px;
+background-image: url('../images/magnify.png');
+background-repeat: no-repeat;
+background-position: 99%;
+text-overflow: ellipsis;
+}
+
+#action {
+list-style:none;
+margin:0;
+padding:0;
+}
+
+#action a {
+color:#EAEAEA;
+text-decoration:none;
+}
+
+#action li {
+float:left;
+font-size:9pt;
+margin-left:18px;
+}
+
+#action li:first-child {
+border-right:1px solid #DFDFDF;
+width:62px;
+}
+
+
+
+
+
+/**************************************************************
+**************************************************************
+******************* SECTION FOR ASIDE ************************
+**************************************************************
+**************************************************************/
+
+aside {
+position:fixed;
+left:0;
+top:386px;
+background-color:#333;
+}
+
+aside ul {
+margin:0;
+padding:0;
+list-style:none;
+}
+
+aside li {
+height:32px;
+width:27px;
+padding:4px 0 4px 12px;
+}
+
+aside .selected {
+background-color:#2292A7;
+}
+
+aside a {
+color:#fff;
+font-size:22px;
+text-decoration:none;
+width:100%;
+height:100%;
+display:block;
+}
+
+
+
+/**************************************************************
+**************************************************************
+******************* SECTION FOR WRAP *************************
+**************************************************************
+**************************************************************/
+
+#wrap {
+max-width:620px;
+min-width:520px;
+margin:55px auto 0;
+padding:48px 0;
+overflow:hidden;
+}
+
+canvas {
+margin:20px 0 36px;
+}
+
+.green {
+margin:4px 0 4px;
+}
+
+.sub-title {
+background-color:#2292A7;
+width:140px;
+height:24px;
+padding-top:8px;
+top:-46px;
+position:relative;
+top:-35px;
+margin:-15px auto;
+font-size:12pt;
+color:#fff;
+display:block;
+font-size:9pt;
+font-weight:600;
+z-index:1;
+}
+
+
+
+
+/**************************************************************
+**************************************************************
+******************* SECTION FOR MENU *************************
+**************************************************************
+**************************************************************/
+
+#nav-menu-fat img {
+margin:0 auto;
+padding:0 100px 0 120px;
+}
+
+#nav-menu-fat .monster-link a {
+color:#2292A7;
+text-decoration:none;
+font-size:18pt;
+margin:10px 0 0 0;
+display:block;
+}
+
+#day-menu {
+z-index:2;
+cursor:pointer;
+}
+
+.nav-menu {
+border-bottom:1px solid #BAB5B5;
+}
+
+.nav-menu ul {
+display: block;
+list-style: none;
+padding: 16px 0;
+width: 100%;
+max-width: 620px;
+margin: 0;
+}
+
+.nav-menu ul li {
+display:inline-block;
+color:#999;
+font-size:15pt;
+font-weight:700;
+text-align:center;
+width:110px;
+}
+
+.nav-menu ul li.selected {
+color:#000;
+}
+
+
+
+/**************************************************************
+**************************************************************
+******************* SECTION FOR WRAP BLOCKS ******************
+**************************************************************
+**************************************************************/
+
+
+.wrap-block {
+text-align:center;
+margin-bottom:14px;
+}
+
+.wrap-block h2, 
+.wrap-block h3, 
+.wrap-block h4, 
+.wrap-block h5 {
+margin:0 auto;
+}
+
+.spotlight {
+color:#333;
+list-style:none;
+overflow:hidden;
+width:220px;
+height:297px;
+margin:0 43px 10px;
+display:inline-block;
+padding:0;
+}
+
+.spotlight img {
+border:1px solid #DFDFDF;
+}
+
+.spotlight h2 {
+margin:14px 0 2px 0;
+font-size:16px;
+}
+
+.spotlight h3 {
+font-size:12px;
+margin-bottom:18px;
+}
+
+.copy-text {
+font-size:10pt;
+color:#333;
+text-align:justify !important;
+padding:0 12px 0 44px;
+display:block;
+}
+
+#sponsors h4, #sponsors h5 {
+color:#999;
+font-size:10pt;
+font-weight:100;
+text-transform:uppercase;
+margin-bottom:30px;
+}
+
+#sponsors ul {
+list-style:none;
+overflow:hidden;
+padding:0;
+margin:0;
+width:105%;
+text-align:left;
+/*text-align:center; more responsive if center*/
+}
+
+#sponsors li {
+display:inline-block;
+text-align:center;
+min-width:129px;
+width:24%;
+height:70px;
+}
+
+#sponsors span {
+width:50%;
+float:left;
+margin-top: 8px;
+}
+
+#sponsors span li {
+min-width: 140px;
+}
+
+
+
+
+/**************************************************************
+**************************************************************
+******************* SECTION FOR FOOTER ***********************
+**************************************************************
+**************************************************************/
+
+footer {
+background-color:#DADADA;
+height:160px;
+border-top:1px solid #fff;
+padding:34px 0 20px 60px;
+}
+
+footer ul {
+list-style:none;
+padding:0;
+margin:0;
+float:left;
+width:28%;
+color:#333;
+}
+
+footer ul:first-child {
+width:42%;
+}
+
+footer li {
+margin-top:3px;
+font-size:13px;
+font-weight:500;
+}
+
+footer .copyright {
+margin-top:80px;
+font-size:12px;
+}
+
+footer a {
+color:#2292A7;
+text-decoration:none;
+}
+
+
+
+
+
+
+
