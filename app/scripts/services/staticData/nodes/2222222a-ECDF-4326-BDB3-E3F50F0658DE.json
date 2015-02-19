@@ -1,0 +1,50 @@
+{
+  "id" : "2222222a-ECDF-4326-BDB3-E3F50F0658DE",
+  "name" : "Facebook",
+  "type" : "company",
+  "height" : "mini",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "acquisitions",
+      "label" : "Acquisitions",
+      "layout" : "table"
+    },{
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "competitors",
+      "label" : "Competitors",
+      "layout" : "table"
+    },{
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "advisors",
+      "label" : "Advisors",
+      "layout" : "table"
+    },{
+      "id" : "psd07dsw-6v7d-0s9f-8sd8-df098sdfms9d",
+      "name" : "twitter",
+      "label" : "Twitter",
+      "layout" : "table"
+    },{
+      "id" : "ns9df9sw-0s0d-6dsf-09ds-09df0gd09duf",
+      "name" : "investments",
+      "label" : "Investments",
+      "layout" : "table"
+    },{
+      "id" : "md09s0sd-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "fundingrounds",
+      "label" : "Funding Rounds",
+      "layout" : "table"
+    },{
+      "id" : "wpe9w045m-87fv-0dfs-d9f0-67sdtnfns78f",
+      "name" : "team",
+      "label" : "Team",
+      "layout" : "table"
+    },{
+      "id" : "9dfjle90-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

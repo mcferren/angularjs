@@ -1,0 +1,136 @@
+<nav class="navbar lockednav">
+  <div class="navbar-inner"
+       ng-cloak>
+
+    <ul class="nav pull-left">
+      <li>
+          <i class="icon-white icon-signal"></i>
+          <a class="couple" 
+             ng-href="#/following">
+             Tele-Graph
+          </a>
+      </li>
+    </ul>
+
+    <ul class="nav">
+      <li ng-if="status=='no'">
+        <div id="status" ng-bind="status"></div>
+        <button type="button" id="login" ng-click="login()">login with facebook</button>
+      </li>
+      <li ng-if="status=='yes'">
+        <div id="status" ng-bind="status"></div>
+        <button type="button" id="login" ng-click="logout()">logout with facebook</button>
+      </li>
+      <li>
+        <div id="status" ng-bind="status"></div>
+        <button type="button" id="me" ng-click="me()">get question</button>
+      </li>
+      <li ng-repeat="link in categoryItems | filter: { spotlight: true }">
+
+          <a ng-if="link.defaultnodes!=null"
+             ng-href="#/related/{{link.defaultnode}}">
+                {{link.title | camelCase}}</a>
+          <a ng-if="link.defaultnodes==null"
+             ng-href="#/{{link.urlpath | nospace}}">
+                {{link.title | camelCase}}</a>
+      </li>
+      <li><a ng-href="#">Search</a></li>
+    </ul>
+
+    <ul class="nav pull-right">
+<!--       <li><a ng-href="#">{{username}}</a></li> -->
+      <li><a class="couple" 
+             ng-href="#/{{currentMenuType}}/111111ss-ECDF-4326-BDB3-E3F50F0658DE">
+             + Create Something
+          </a>
+      </li>
+      <!-- <li><a ng-href="/logout">Login</a></li> -->
+    </ul>
+  </div>
+</nav>
+
+<div class="row-fluid">
+
+  <div class="topshelf" 
+       ng-class="{'skinny':templateState.sidebarState, 
+                  'fat':!templateState.sidebarState}" > 
+  </div> <!-- simply an underline to controlz-index -->
+
+  <div class="content skinny" 
+       ng-class="{'skinny':templateState.sidebarState, 
+                  'fat':!templateState.sidebarState}">
+
+      <div class="canvasPot">
+        <div ng-repeat="node in activeCanvasNodes" 
+             class="nodeCard" 
+             ng-cloak>
+
+          <div node-detail 
+             ng-cloak 
+             identity="node"
+             templatestate="templateState">
+          </div>
+            
+        </div>
+      </div>
+
+      <div ui-view="sidebar" >
+      </div> 
+
+  </div> 
+
+  <div class="contentCanvas well" 
+     ng-class="{'skinny':templateState.sidebarState, 
+                'fat':!templateState.sidebarState, 
+                'ccTall':templateState.helpState, 
+                'ccShort':!templateState.helpState}"> 
+  </div>  
+
+  <footer class="footerCanvas"
+     ng-class="{'skinny':templateState.sidebarState, 
+                'fat':!templateState.sidebarState}" >
+      <div class="well"
+           ng-class="{'tall':templateState.helpState, 
+                      'short':!templateState.helpState}">
+            <ul ng-if="templateState.helpState==true">
+
+                <li class="labeled"
+                    ng-repeat="catlink in categoryItems | orderBy:'spotlight'">
+                    <input id="{{catlink.title | nospace}}_id" 
+                           type="checkbox" 
+                           ng-model="catlink.spotlight">
+                    <label for="{{catlink.title | nospace}}_id">{{catlink.title | camelCase}}</label>
+                </li>
+            </ul>
+      </div>
+  </footer>
+
+  <footer class="navbar"
+          ng-class="{'skinny':templateState.sidebarState, 
+                     'fat':!templateState.sidebarState} " >
+        <ul class="nav">
+          <li ng-repeat="link in footerItems" ng-cloak>
+              <a ng-href="#/home/{{link}}">{{link}}</a>
+          </li>
+        </ul>
+
+        <ul class="nav pull-right">
+          <li class="labeled">
+            <label><a ng-href="#/{{currentMenuType}}/OOOOOOO9-ECDF-4326-BDB3-E3F50F0658DE">Map</a></label>
+          </li>
+          <li class="labeled">
+            <label for="catClick">Interest Hub Categories:</label>
+            <input id="catClick" 
+                   type="checkbox" 
+                   ng-model="templateState.helpState">
+          </li>
+          <li class="labeled">
+            <label for="sideClick" >Activity Monitor:</label>
+            <input id="sideClick" 
+                   type="checkbox" 
+                   ng-model="templateState.sidebarState">
+          </li>
+        </ul>
+  </footer> 
+
+</div>

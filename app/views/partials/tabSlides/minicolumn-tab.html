@@ -1,0 +1,56 @@
+<ul class="sortLinks"
+    ng-class="{'phSkinny':matryoshkatemplate.sidebarState, 
+    		   'phFat':!matryoshkatemplate.sidebarState}">
+</ul>
+<div class="staticProjectCanvas tableFence" 
+     ng-class="{'gutterskinny':matryoshkatemplate.sidebarState, 
+                'gutterfat':!matryoshkatemplate.sidebarState,
+                'superNodeCanvas':matryoshkanode.height === 'super', 
+                'miniNodeCanvas':matryoshkanode.height === 'mini'}"> 
+
+      <form class="input-append projectSearchRow dropup white"
+            ng-class="{'birTall':matryoshkatemplate.helpState, 
+                       'birShort':!matryoshkatemplate.helpState}"
+            ng-submit="submit()">
+
+              <input id="projectSearch" 
+                     type="text" 
+                     data-msd-placeholder="Search..." 
+                     data-ng-model="text">
+              <div class="projectSearchDropUp"
+                   ng-mouseenter="dropUpHover = true" 
+                   ng-mouseleave="dropUpHover = false">
+                      <span class="caret"></span>
+              </div>
+              <div class="projectSearchToolSeparator">
+                  <span></span>
+              </div>
+
+              <div class="nodeGutterTool searchplacibo"
+                   ng-mouseenter="placiboSearchHover = true" 
+                   ng-mouseleave="placiboSearchHover = false">
+                      <i class="icon-search"
+                            ng-class="{'':placiboSearchHover, 'icon-white':!placiboSearchHover}">
+                      </i>
+              </div>
+              <div class="projectSearchToolSeparator">
+                  <span></span>
+              </div>
+              <div class="nodeGutterTool facebook social"></div>
+      </form>
+
+
+      <div class="bottomProjectRow">
+          <div class="projectAuxCreateButton">
+            <a href="/">{{tabDataObject.parameters.buttontext}}</a>
+            <i ng-class="tabDataObject.parameters.buttonicon"></i>
+          </div>
+      </div>
+</div>  
+
+<div class="projectBody"
+     ng-class="{'superNodeBody':matryoshkanode.height === 'super', 
+                'miniNodeBody':matryoshkanode.height === 'mini'}"> 
+  <p ng-bind-html="descriptioncontent"></p>
+
+</div>

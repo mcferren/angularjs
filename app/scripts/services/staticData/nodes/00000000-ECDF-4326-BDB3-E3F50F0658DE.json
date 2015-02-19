@@ -1,0 +1,50 @@
+{
+  "id" : "00000000-ECDF-4326-BDB3-E3F50F0658DE",
+  "name" : "Benjamin McFerren",
+  "type" : "person",
+  "height" : "mini",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "investments",
+      "label" : "Investments",
+      "layout" : "table"
+    },{
+      "id" : "uuwiodps-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "news",
+      "label" : "News",
+      "layout" : "details"
+    },{
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "twitter",
+      "label" : "Twitter",
+      "layout" : "table"
+    },{
+      "id" : "ns9df9sw-0s0d-6dsf-09ds-09df0gd09duf",
+      "name" : "events",
+      "label" : "Events",
+      "layout" : "table"
+    },{
+      "id" : "md09s0sd-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "products",
+      "label" : "Advisor",
+      "layout" : "table"
+    },{
+      "id" : "xxosp99w-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "education",
+      "label" : "Education",
+      "layout" : "details"
+    },{
+      "id" : "qq6w79s0-87fv-0dfs-d9f0-67sdtnfns78f",
+      "name" : "experience",
+      "label" : "Experience",
+      "layout" : "details"
+    },{
+      "id" : "v38s0dia-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

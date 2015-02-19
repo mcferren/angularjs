@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="myapp">
+<html class="no-js"> 
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sea * Side Syndication</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <link rel="stylesheet" href="styles/faux.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid">
+
+    <div ui-view></div>  
+
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+    <script src='bower_components/nginfinitescroll/build/ng-infinite-scroll.min.js'></script>
+    <script src='bower_components/angular-placeholder/placeholder.js'></script>
+    <script src='bower_components/angular-facebook/lib/angular-facebook.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+
+    <!-- build:js scripts/modules.js -->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/controllers/templateCtrl.js"></script> 
+    <script src="scripts/controllers/node-menuCtrl.js"></script> 
+    <script src="scripts/controllers/node-detailsCtrl.js"></script> 
+    <script src="scripts/controllers/activityMonitorCtrl.js"></script> 
+    <script src="scripts/controllers/tabSlides/table-tab.js"></script>
+    <script src="scripts/controllers/tabSlides/edit-tab.js"></script>
+    <script src="scripts/controllers/tabSlides/details-tab.js"></script>
+    <script src="scripts/controllers/tabSlides/minicolumn-tab.js"></script>
+    <script src="scripts/controllers/tabSlides/skinnybody-tab.js"></script>
+
+    <script src="scripts/services/proxy_api.js"></script>
+    <script src="scripts/services/tempstaticservice.js"></script>
+
+    <script src="scripts/filters/camelCase.js"></script>
+    <script src="scripts/filters/nospace.js"></script>
+
+    <script src="scripts/directives/node-detail.js"></script>
+    <script src="scripts/directives/tabSlides/edit-tab.js"></script>
+    <script src="scripts/directives/tabSlides/details-tab.js"></script>
+    <script src="scripts/directives/tabSlides/table-tab.js"></script>
+    <script src="scripts/directives/tabSlides/minicolumn-tab.js"></script>
+    <script src="scripts/directives/tabSlides/skinnybody-tab.js"></script>
+    <script src="scripts/directives/nice_scroller.js"></script>
+    <script src="scripts/directives/div_specific_inifinite_scroll.js"></script>
+    <script src="scripts/directives/greenman.js"></script>
+    <!-- endbuild -->
+    
+</body>
+</html>

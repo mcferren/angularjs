@@ -1,0 +1,21 @@
+{
+  "id" : "eriwsome-s0d9-jkd7-2ns8-98sd8k3m9suj",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "20388ED8-ECDF-4326-BDB3-E3F50F0658DE"
+  },
+  "columnNames" : {
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "description" : "<div style='position:relative;top: -210px;'><iframe width='100%' height='690px' frameBorder='0' src='http://techcrunch.com/2014/09/05/smart-accessibility/'></iframe></div>"
+    }
+  ]
+}

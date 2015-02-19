@@ -1,0 +1,89 @@
+<!-- <div class="projectBlock"> -->
+<!-- - - - - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - - - - -->
+<!-- <div class="projectBlock" ng-if="projectState.collapseIsClosed==false"> -->
+<!-- - - - - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - - - - -->
+	<div class="projectHeader"
+		 ng-if="identity.layout == 'tabs'"
+       	 ng-class="{'phSkinny':templatestate.sidebarState, 
+       	 			'phFat':!templatestate.sidebarState}">
+       	<!-- - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - -->
+		<!-- <i ng-click="changeCollapseState()" class="icon-star-empty"></i> -->
+		<!-- <h4 ng-click="changeCollapseState()">{{identity.title}}</h4> -->
+		<!-- - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - -->
+		<h4>{{identity.name}}</h4>
+
+		<ul class="nav nav-tabs pull-right" ng-cloak>
+<!-- 			<li ng-class="{'active':nodeState.selection.name == 'edit'}">
+				<a ng-click="changeTab('edit',
+									   '',
+									   'edit')">Edit</a>
+			</li> -->
+			<li ng-repeat="tabHeader in identity.slides" 
+				ng-class="{'active':nodeState.selection.name == tabHeader.name}">
+				<a ng-click="changeTab(tabHeader.name,
+									   tabHeader.id,
+									   tabHeader.layout)">{{tabHeader.label}}</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="node-slides"
+		 ng-repeat="tabBody in returnSlideList">
+
+			<!-- These possible tab blocks if tabs template -->
+
+			<div ng-if="nodeState.selection.name == tabBody &&
+						identity.template == 'tabs' &&
+						nodeState.selection.layout === 'details'" 
+				 class="details-tab"
+				 matryoshkanode="nodeState"
+				 matryoshkatemplate="templatestate"></div> 
+
+			<div ng-if="nodeState.selection.name == tabBody &&
+						identity.template == 'tabs' &&
+						nodeState.selection.layout === 'table'" 
+				 class="table-tab" 
+				 matryoshkanode="nodeState"
+				 matryoshkatemplate="templatestate"></div>
+
+			<div ng-if="nodeState.selection.name == tabBody &&
+						identity.template == 'tabs' &&
+						nodeState.selection.layout === 'edit'" 
+				 class="edit-tab"
+				 matryoshkanodeidentity="identity"
+				 matryoshkatemplate="templatestate"></div>
+
+
+
+			<!-- These possible tab blocks if list template -->
+
+			<div ng-if="identity.template == 'list' &&
+						identity.slides[$index].layout === 'details'" 
+				 class="details-tab purk"
+				 matryoshkanode="getSlidePayload($index);"
+				 matryoshkatemplate="templatestate"></div> 
+
+			<div ng-if="identity.template == 'list' &&
+						identity.slides[$index].layout === 'minicolumn'" 
+				 class="minicolumn-tab"
+				 matryoshkanode="getSlidePayload($index);"
+				 matryoshkatemplate="templatestate"></div> 
+
+			<div ng-if="identity.template == 'list' &&
+						identity.slides[$index].layout === 'skinnybody'" 
+				 class="skinnybody-tab"
+				 matryoshkanode="getSlidePayload($index);"
+				 matryoshkatemplate="templatestate"></div> 
+	</div>
+<!-- </div> -->
+
+<!-- - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - - - -
+<div class="projectBlock" ng-if="projectState.collapseIsClosed==true">
+	<div class="projectHeader"
+       	 ng-class="{'phSkinny':templatestate.sidebarState, 
+       	 			'phFat':!templatestate.sidebarState}">
+		<i ng-click="changeCollapseState()" class="icon-plus-sign"></i>
+		<h4 ng-click="changeCollapseState()">{{identity.title}}</h4>
+	</div>
+</div>
+- - - - - - - - - - FUTURE ITERATIONS WITH SPLIT SCREEN - - - - - - -->

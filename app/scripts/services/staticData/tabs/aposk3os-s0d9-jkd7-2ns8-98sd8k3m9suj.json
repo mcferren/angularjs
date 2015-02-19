@@ -1,0 +1,49 @@
+{
+  "id" : "aposk3os-s0d9-jkd7-2ns8-98sd8k3m9suj",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "20388ED8-ECDF-4326-BDB3-E3F50F0658DE"
+  },
+  "columnNames" : {
+    "organization" : "Project Owner",
+    "jobtitle" : "Location",
+    "userid" : "User ID",
+    "usertype" : "User Type",
+    "location" : "Location",
+    "emailaddress" : "Email Address",
+    "phonenumber" : "Phone Number",
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "organization" : "NUMERIC",
+    "jobtitle" : "NUMERIC",
+    "userid" : "NUMERIC",
+    "usertype" : "NUMERIC",
+    "location" : "NUMERIC",
+    "emailaddress" : "NUMERIC",
+    "phonenumber" : "NUMERIC",
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "organization" : "organization.png",
+    "jobtitle" : "jobtitle.png",
+    "userid" : "userid.png",
+    "usertype" : "usertype.png",
+    "location" : "location.png",
+    "emailaddress" : "emailaddress.png",
+    "phonenumber" : "phonenumber.png",
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "organization" : "Law Firm USA",
+    "jobtitle" : "Attorney",
+    "userid" : "A8342",
+    "usertype" : "Sys Admin User",
+    "location" : "Charlotte, NC USA",
+    "emailaddress" : "bjones@lawfirm.com",
+    "phonenumber" : "555-555-5555",
+    "description" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id" : "11111111-9F0C-4401-92D8-AFB761FE51F1",
+  "name" : "Anthony Pompliano",
+  "type" : "person",
+  "height" : "super",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "investments",
+      "label" : "Investments",
+      "layout" : "table"
+    },{
+      "id" : "nnamike9-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "news",
+      "label" : "News",
+      "layout" : "details"
+    },{
+      "id" : "jujsujel-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "twitter",
+      "label" : "Twitter",
+      "layout" : "details"
+    },{
+      "id" : "ns9df9sw-0s0d-6dsf-09ds-09df0gd09duf",
+      "name" : "events",
+      "label" : "Events",
+      "layout" : "table"
+    },{
+      "id" : "md09s0sd-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "products",
+      "label" : "Advisor",
+      "layout" : "table"
+    },{
+      "id" : "bbwu76wh-vf89-0sdf-v89v-98sd7f9sn9f8",
+      "name" : "education",
+      "label" : "Education",
+      "layout" : "details"
+    },{
+      "id" : "iuwj7w8e-87fv-0dfs-d9f0-67sdtnfns78f",
+      "name" : "experience",
+      "label" : "Experience",
+      "layout" : "details"
+    },{
+      "id" : "is9daos9-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

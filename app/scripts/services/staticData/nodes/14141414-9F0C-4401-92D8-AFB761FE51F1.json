@@ -1,0 +1,20 @@
+{
+  "id" : "14141414-9F0C-4401-92D8-AFB761FE51F1",
+  "name" : "Goldman Sachs",
+  "type" : "investor",
+  "height" : "super",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "9s0dm3d0-3b8a-0sdm-2jhs-7a8snsd903ks",
+      "name" : "news",
+      "label" : "News",
+      "layout" : "table"
+    },{
+      "id" : "xos93ios-s0d9-jkd7-2ns8-98sd8k3m9suj",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

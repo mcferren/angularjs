@@ -1,0 +1,171 @@
+{
+  "id" : "9s0dm3d0-3b8a-0sdm-2jhs-7a8snsd903ks",
+  "name" : "permissions",
+  "parameters" : {
+    "projectId" : "20388ED8-ECDF-4326-BDB3-E3F50F0658DE",
+    "placeholder" : "Search for Users...",
+    "buttontext" : "Add New User",
+    "buttonicon" : "icon-plus"
+  },
+  "columnNames" : {
+    "permissionname" : "Permission Name",
+    "size" : "Size",
+    "type" : "Type",
+    "status" : "Status"
+  },
+  "columnTypes" : {
+    "permissionname" : "NUMERIC",
+    "size" : "NUMERIC",
+    "type" : "NUMERIC",
+    "status" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "permissionname" : "",
+    "size" : "",
+    "type" : "",
+    "status" : ""
+  },
+  "rows" : [
+               {
+                "permissionname": "2394820",
+                "size": "55KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "23840234",
+                "size": "34KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "permissionname": "2384023",
+                "size": "83KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }, {
+                "permissionname": "2384023",
+                "size": "34KB",
+                "type": "PDF",
+                "status": ""
+            }, {
+                "permissionname": "30293849",
+                "size": "13KB",
+                "type": "PDF",
+                "status": "DESTROY"
+            }, {
+                "permissionname": "2394820",
+                "size": "47KB",
+                "type": "PDF",
+                "status": "HOLD"
+            }
+  ]
+}

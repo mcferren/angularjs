@@ -1,0 +1,15 @@
+{
+  "id" : "111111ss-ECDF-4326-BDB3-E3F50F0658DE",
+  "name" : "",
+  "type" : "component",
+  "height" : "super",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "iiiiiiii-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "details",
+      "label" : "Add to CrunchBase",
+      "layout" : "details"
+    }
+  ]
+}

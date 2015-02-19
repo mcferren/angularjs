@@ -1,0 +1,402 @@
+{
+   "page":0,
+   "pageSize":0,
+   "totalResults":0,
+   "results":[
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":true
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":true,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":true,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":true,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      },
+      {
+         "id":"77777777-A3A5-42A2-8D66-6D1EFC433724",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Pittsburgh",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-50px 0px"
+      },
+      {
+         "id":"88888888-9F0C-4401-92D8-AFB761FE51F1",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"DePaul University",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-68px 0px"
+      },
+      {
+         "id":"99999999-ECDF-4326-BDB3-E3F50F0658DE",
+         "domain":{
+            "id":"37AA68EC-12E4-4A0F-A5CA-3AF25566329A",
+            "name":"Skye"
+         },
+         "name":"University of Puerto Rico",
+         "nodetype":"school",
+         "active":true,
+         "isFavorite":false,
+         "iconcoordinates":"-86px 0px"
+      }
+   ]
+}

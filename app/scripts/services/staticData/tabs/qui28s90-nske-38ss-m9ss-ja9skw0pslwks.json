@@ -1,0 +1,45 @@
+{
+  "id" : "qui28s90-nske-38ss-m9ss-ja9skw0pslwks",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "3D0935BF-9F0C-4401-92D8-AFB761FE51F1"
+  },
+  "columnNames" : {
+    "projectowner" : "Project Owner",
+    "location" : "Location",
+    "orioninstance" : "Instance",
+    "datecreated" : "Date Created",
+    "projectsize" : "Project Size",
+    "drinstance" : "DR Instance",
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "projectowner" : "NUMERIC",
+    "location" : "NUMERIC",
+    "orioninstance" : "NUMERIC",
+    "datecreated" : "DATE",
+    "projectsize" : "NUMERIC",
+    "drinstance" : "DATE",
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "projectowner" : "owner.png",
+    "location" : "location.png",
+    "orioninstance" : "orioninstance.png",
+    "datecreated" : "datecreated.png",
+    "projectsize" : "projectsize.png",
+    "drinstance" : "drinstance.png",
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "projectowner" : "Moot Taylor",
+    "location" : "Charlotte, NC USA",
+    "orioninstance" : "O2038-FR",
+    "datecreated" : "66567890124567",
+    "projectsize" : "445GB",
+    "drinstance" : "DR Instance",
+    "description" : "<iframe style='border: 0px;'' src='https://public.tableausoftware.com/views/khoslaa16z/Bubbles?:embed=y&amp;:display_count=no&amp;:showVizHome=no' width='680px' height='500px' scrolling='no'></iframe>"
+    }
+  ]
+}

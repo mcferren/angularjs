@@ -1,0 +1,25 @@
+{
+  "id" : "h8s0d8ds-v483-ksld-2m9s-9suds9udn0sn",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "20388ED8-ECDF-4326-BDB3-E3F50F0658DE"
+  },
+  "columnNames" : {
+    "owner" : "Owner",
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "owner" : "NUMERIC",
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "owner" : "owner.png",
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "owner" : "Matt Taylor",
+    "description" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    }
+  ]
+}

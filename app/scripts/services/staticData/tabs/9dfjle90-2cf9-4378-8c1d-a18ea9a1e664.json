@@ -1,0 +1,45 @@
+{
+  "id" : "9dfjle90-2cf9-4378-8c1d-a18ea9a1e664",
+  "name" : "details",
+  "parameters" : {
+    "projectId" : "996332B1-A3A5-42A2-8D66-6D1EFC433724"
+  },
+  "columnNames" : {
+    "projectowner" : "Project Owner",
+    "location" : "Location",
+    "orioninstance" : "Instance",
+    "datecreated" : "Date Created",
+    "projectsize" : "Project Size",
+    "drinstance" : "DR Instance",
+    "description" : "Description"
+  },
+  "columnTypes" : {
+    "projectowner" : "NUMERIC",
+    "location" : "NUMERIC",
+    "orioninstance" : "NUMERIC",
+    "datecreated" : "DATE",
+    "projectsize" : "NUMERIC",
+    "drinstance" : "DATE",
+    "description" : "NUMERIC"
+  },
+  "columnIcons" : {
+    "projectowner" : "owner.png",
+    "location" : "location.png",
+    "orioninstance" : "orioninstance.png",
+    "datecreated" : "datecreated.png",
+    "projectsize" : "projectsize.png",
+    "drinstance" : "drinstance.png",
+    "description" : ""
+  },
+  "rows" : [
+    {
+    "projectowner" : "Meet Taylor",
+    "location" : "Charlotte, NC USA",
+    "orioninstance" : "O2038-FR",
+    "datecreated" : "66567890124567",
+    "projectsize" : "445GB",
+    "drinstance" : "DR Instance",
+    "description" : "<div style='position:relative;top: -210px;'><iframe width='100%' height='490px' frameBorder='0' src='https://www.facebook.com/facebook'></iframe></div>"
+    }
+  ]
+}

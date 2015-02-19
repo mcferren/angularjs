@@ -1,0 +1,108 @@
+<ul class="sortLinks"
+    ng-class="{'phSkinny':matryoshkatemplate.sidebarState, 
+    		   'phFat':!matryoshkatemplate.sidebarState}">
+</ul>
+
+<!-- <div class="projectWrapper"
+     ng-class="{'phSkinny':matryoshkatemplate.sidebarState, 
+     			'phFat':!matryoshkatemplate.sidebarState}">
+</div> -->
+
+<!-- <div class="staticProjectCanvasAux" 
+     ng-class="{'skinny':matryoshkatemplate.sidebarState, 
+                'fat':!matryoshkatemplate.sidebarState, 
+                'spcShortAux':matryoshkatemplate.helpState, 
+                'spcTallAux':!matryoshkatemplate.helpState}"> 
+		<div class="bottomBlank">
+		</div>
+		<div class="bottomFence">
+			<div class="leftBlinder"></div>
+			<div class="rightBlinder"></div>
+		</div>
+</div> -->
+
+
+<!-- <div class="staticProjectCanvas tableFence" 
+     ng-class="{'skinny':matryoshkatemplate.sidebarState, 
+                'fat':!matryoshkatemplate.sidebarState, 
+                'spcShort':matryoshkatemplate.helpState, 
+                'spcTall':!matryoshkatemplate.helpState}">  -->
+<div class="staticProjectCanvas tableFence" 
+     ng-class="{'gutterskinny':matryoshkatemplate.sidebarState, 
+                'gutterfat':!matryoshkatemplate.sidebarState,
+                'superNodeCanvas':matryoshkanode.height === 'super', 
+                'miniNodeCanvas':matryoshkanode.height === 'mini'}"> 
+<!-- <div class="staticProjectCanvas tableFence">  -->
+
+      <form class="input-append projectSearchRow dropup white"
+            ng-class="{'birTall':matryoshkatemplate.helpState, 
+                       'birShort':!matryoshkatemplate.helpState}"
+            ng-submit="submit()">
+
+              <input id="projectSearch" 
+                     type="text" 
+                     data-msd-placeholder="Search..." 
+                     data-ng-model="text">
+              <div class="projectSearchDropUp"
+                   ng-mouseenter="dropUpHover = true" 
+                   ng-mouseleave="dropUpHover = false">
+                      <span class="caret"></span>
+              </div>
+              <div class="projectSearchToolSeparator">
+                  <span></span>
+              </div>
+              <!-- NEED TO RETURN HERE AND REPLACE THIS WITH A UL / LI-LI-LI-LI -->
+              <div class="nodeGutterTool searchplacibo"
+                   ng-mouseenter="placiboSearchHover = true" 
+                   ng-mouseleave="placiboSearchHover = false">
+                      <i class="icon-search"
+                            ng-class="{'':placiboSearchHover, 'icon-white':!placiboSearchHover}">
+                      </i>
+              </div>
+              <div class="projectSearchToolSeparator">
+                  <span></span>
+              </div>
+              <div class="nodeGutterTool facebook social"></div>
+      </form>
+              <!--
+              <ul class="dropdown-menu"
+                    ng-class="{'menuShort':matryoshkatemplate.helpState, 
+                               'menuTall':!matryoshkatemplate.helpState}">
+                ...
+              </ul>
+              -->
+
+
+      <div class="bottomProjectRow">
+          <div class="projectAuxCreateButton">
+            <a href="/">{{tabDataObject.parameters.buttontext}}</a>
+            <i ng-class="tabDataObject.parameters.buttonicon"></i>
+          </div>
+      </div>
+</div>  
+
+<div class="projectBody"
+     ng-class="{'superNodeBody':matryoshkanode.height === 'super', 
+                'miniNodeBody':matryoshkanode.height === 'mini'}"> 
+<!-- 	<div class="statsBody"
+       ng-if="tabDataObject.columnNames.length > 1">
+	nice-scrollbar infinite-scroll='loadingMore()' infinite-scroll-distance='10'
+		<table>
+			<tbody>
+				<tr ng-repeat="rows in rowsbycolumn">
+					<td ng-repeat="field in rows">
+						<div ng-if="field !== 'description'">
+							<img ng-src="/images/details_icons/{{tabDataObject.columnIcons[field]}}">
+							<br>
+							<em>{{tabDataObject.columnNames[field]}}:</em> 
+							<br>
+							{{tabDataObject.rows[0][field] | date}}
+						<div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div> -->
+  <p ng-bind-html="descriptioncontent"></p>
+
+</div>

@@ -1,0 +1,35 @@
+{
+  "id" : "20202020-9F0C-4401-92D8-AFB761FE51F1",
+  "name" : "GraphConnect 2014",
+  "type" : "event",
+  "height" : "super",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "uS8s9d30-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "exhibitors",
+      "label" : "Exhibitors",
+      "layout" : "table"
+    },{
+      "id" : "uS8s9d30-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "contestants",
+      "label" : "Contestants",
+      "layout" : "table"
+    },{
+      "id" : "uS8s9d30-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "sponsors",
+      "label" : "Sponsors",
+      "layout" : "table"
+    },{
+      "id" : "uS8s9d30-2cf9-4378-8c1d-a18ea9a1e664",
+      "name" : "speakers",
+      "label" : "Speakers",
+      "layout" : "table"
+    },{
+      "id" : "usdf89sd-sdoi-sd9f-md9s-0df0sdfs7sdh",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

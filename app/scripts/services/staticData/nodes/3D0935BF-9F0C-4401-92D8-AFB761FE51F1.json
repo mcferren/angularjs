@@ -1,0 +1,72 @@
+{
+  "id" : "3D0935BF-9F0C-4401-92D8-AFB761FE51F1",
+  "name" : "",
+  "type" : "article",
+  "height" : "mini",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "sdf8ss9e-5egr-54gs-g45d-5ggwrg5w5wh6",
+      "name" : "author",
+      "label" : "Darrell Etherington",
+      "layout" : "table"
+    },{
+      "id" : "9s0dm3d0-3b8a-0sdm-2jhs-7a8snsd903ks",
+      "name" : "date",
+      "label" : "November 11, 2014 10:30am",
+      "layout" : "table"
+    },{
+      "id" : "hs8i9s0d-s0d9-jkd7-2ns8-98sd8k3m9suj",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ],
+  "attributes" : [
+    {
+      "name" : "organization",
+      "label" : "Organization",
+      "type" : "text",
+      "value" : "Law Firm USA"
+    },{
+      "name" : "jobtitle",
+      "label" : "Job Title",
+      "type" : "text",
+      "value" : "Attorney"
+    },{
+      "name" : "userid",
+      "label" : "User ID",
+      "type" : "text",
+      "value" : "A8342"
+    },{
+      "name" : "usertype",
+      "label" : "User Type",
+      "type" : "select",
+      "value" : "Sys Admin User",
+      "options" : [
+        "Limited Admin User",
+        "Sys Admin User"
+      ]
+    },{
+      "name" : "location",
+      "label" : "Location",
+      "type" : "text",
+      "value" : "Charlotte, NC USA"
+    },{
+      "name" : "emailaddress",
+      "label" : "Email Address",
+      "type" : "text",
+      "value" : "bjones@lawfirm.com"
+    },{
+      "name" : "phonenumber",
+      "label" : "Phone Number",
+      "type" : "text",
+      "value" : "555-555-5555"
+    },{
+      "name" : "description",
+      "label" : "Description",
+      "type" : "textarea",
+      "value" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore"
+    }
+  ]
+}

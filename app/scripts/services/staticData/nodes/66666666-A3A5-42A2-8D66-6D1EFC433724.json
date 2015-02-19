@@ -1,0 +1,20 @@
+{
+  "id" : "66666666-A3A5-42A2-8D66-6D1EFC433724",
+  "name" : "iPhone 6",
+  "type" : "product",
+  "height" : "super",
+  "template" : "tabs",
+  "slides" : [
+    {
+      "id" : "9s0dm3d0-3b8a-0sdm-2jhs-7a8snsd903ks",
+      "name" : "news",
+      "label" : "News",
+      "layout" : "table"
+    },{
+      "id" : "aposk3os-s0d9-jkd7-2ns8-98sd8k3m9suj",
+      "name" : "details",
+      "label" : "Details",
+      "layout" : "details"
+    }
+  ]
+}

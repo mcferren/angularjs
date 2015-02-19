@@ -1,0 +1,251 @@
+{
+   "page":0,
+   "pageSize":0,
+   "totalResults":0,
+   "results":[
+		 {
+			"urlpath":"companies",
+			"spotlight": true,
+			"defaultnodes":null,
+			"menu":"companies",
+			"menuheader":"Companies",
+			"menusearch":"for Companies",
+			"menubutton":"company",
+			"title":"home"
+		},  {
+			"urlpath":"people",
+			"spotlight": true,
+			"defaultnodes":null,
+			"menu":"people",
+			"menuheader":"People",
+			"menusearch":"for People",
+			"menubutton":"person",
+			"title":"environment"
+		},  {
+			"urlpath":"products",
+			"spotlight": true,
+			"defaultnodes":null,
+			"menu":"produtcs",
+			"menuheader":"Products",
+			"menusearch":"for Products",
+			"menubutton":"product",
+			"title":"internet"
+		},  {
+			"urlpath":"events",
+			"spotlight": true,
+			"defaultnodes":null,
+			"menu":"events",
+			"menuheader":"Events",
+			"menusearch":"for Events",
+			"menubutton":"event",
+			"title":"education"
+		},  {
+			"urlpath":"schools",
+			"spotlight": true,
+			"defaultnodes":null,
+			"menu":"schools",
+			"menuheader":"Schools",
+			"menusearch":"for Schools",
+			"menubutton":"school",
+			"title":"music"
+		},  {
+			"urlpath":"government",
+			"spotlight": true,
+			"defaultnodes":null,
+			"menu":"government",
+			"menuheader":"Government",
+			"menusearch":"amongst Govt.",
+			"menubutton":"govt agency",
+			"title":"sports"
+		},  {
+			"urlpath":"investors",
+			"spotlight": true,
+			"defaultnodes":"PPPP1919-AMKS-1293-WM8S-USIIEKSLSPE8",
+			"menu":"investors",
+			"menuheader":"Investors",
+			"menusearch":"for Investors",
+			"menubutton":"investor page",
+			"title":"contact"
+		},  {
+			"urlpath":"locations",
+			"spotlight": null,
+			"defaultnodes":"10101010-A3A5-42A2-8D66-6D1EFC433724",
+			"menu":"locations",
+			"menuheader":"Locations",
+			"menusearch":"for locations",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"san francisco",
+			"spotlight": null,
+			"defaultnodes":"10101010-A3A5-42A2-8D66-6D1EFC433724",
+			"menu":"related",
+			"menuheader":"San Francisco",
+			"menusearch":"amongst SF",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"celebrity investors",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Celebrity Investors",
+			"menusearch":"info about Celebs",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"carmelo anthony",
+			"spotlight": null,
+			"defaultnodes":"22222222-A3A5-42A2-8D66-6D1EFC433724",
+			"menu":"related",
+			"menuheader":"Carmelo Anthony",
+			"menusearch":"info about Carmelo",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"internet of things",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Internet of Things",
+			"menusearch":"info about IOT",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"arduino",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Arduino",
+			"menusearch":"info about Arduino",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"incubators",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Incubators",
+			"menusearch":"for Incubators",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"top ten list",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Top Ten List",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"eirmod tempor",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Eirmod Tempor",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"dolore magna",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Dolore Magna",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"aliquyam erat",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Aliquyam Erat",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"diam voluptua",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Diam Voluptua",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"clitakasd gubergren",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Clitakasd Gubergren",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"seddiam voluptua",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Seddiam Voluptua",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"veroeoset accusam",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Veroeoset Accusam",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"etjustoduo dolores",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Etjustoduo Dolores",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"nosea takimata",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Nosea Takimata",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"sanctus estorem",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Sanctus Estorem",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"ipsumdolor sitamet",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Ipsumdolor Sitamet",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		},  {
+			"urlpath":"consetetur sadipscing",
+			"spotlight": null,
+			"defaultnodes":"JD9SWJSF-QIOE-92J3-N3KS-8S9DVEBS02NE",
+			"menu":"related",
+			"menuheader":"Consetetur Sadipscing",
+			"menusearch":"related pages",
+			"menubutton":"related page",
+			"title":"home"
+		}
+	]
+}
